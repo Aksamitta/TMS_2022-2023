@@ -1,0 +1,59 @@
+USE [Test_Team]
+GO
+/****** Object:  Trigger [dbo].[Player_Salary_INSERT]    Script Date: 21/02/2023 23:46:46 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER TRIGGER [dbo].[Player_Salary_INSERT] ON [dbo].[Player]
+AFTER INSERT
+AS
+BEGIN
+DECLARE @s varchar(50)
+UPDATE player
+SET player.Salary = team.Rate * (player.Age / 10) 
+FROM inserted i
+JOIN Player player ON i.PlayerID = player.PlayerID
+JOIN Team team ON i.TeamID = team.TeamID
+SELECT @s = Name FROM inserted
+PRINT 'Salary' + @s + 'was changed'
+END
+
+USE [Test_Team]
+GO
+/****** Object:  Trigger [dbo].[Player_INSERT]    Script Date: 21/02/2023 23:46:32 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER TRIGGER [dbo].[Player_INSERT] ON [dbo].[Player]
+AFTER INSERT
+AS
+BEGIN
+DECLARE @pl varchar(50)
+SELECT @pl = Name FROM inserted
+PRINT @pl + 'was added'
+END
+
+USE [Test_Team]
+GO
+/****** Object:  StoredProcedure [dbo].[TeamSpend]    Script Date: 21/02/2023 23:20:36 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[TeamSpend] 
+AS
+BEGIN
+SELECT TeamID, SUM(Salary) FROM Player
+GROUP BY TeamID
+END
+
+select * from Player
+select * from Team
+insert Player values (4, 'Ole', 20, 0);
+insert Team values (50);
+delete Team where TeamID = 3
+EXEC [dbo].[TeamSpend] 
+
+

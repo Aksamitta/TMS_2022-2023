@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Lab23_Aksana.Patrubeika_ORM.props" />
+</Project>
