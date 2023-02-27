@@ -1,0 +1,32 @@
+﻿@model List<Lab17_Aksana.Patrubeika_Views.Models.Car>
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Model</th>
+        <th>Year</th>
+        <th>Engine</th>
+        <th>Price</th>
+        <th>Color</th>
+    </tr>
+    </thead>
+
+    <tbody>
+
+       @{
+            foreach (var car in Model)
+            {
+                                <tr>
+                                    <td>@car.Id</td>
+                                    <td>@car.Model</td>
+                                    <td>@car.Year</td>
+                                    <td>@car.Engine</td>
+                                    <td>@car.Price</td>
+                                    <td>@car.Color</td>                                  
+                                </tr>
+            }
+       }
+
+    </tbody>
+</table>

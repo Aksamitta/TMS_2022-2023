@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Lab15_Aksana.Patrubeika_Controllers.props" />
+</Project>

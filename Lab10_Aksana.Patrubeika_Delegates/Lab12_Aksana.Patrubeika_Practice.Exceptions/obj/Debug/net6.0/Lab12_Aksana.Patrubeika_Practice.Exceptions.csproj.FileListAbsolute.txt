@@ -1,0 +1,15 @@
+D:\C#\LABS\Lab12_Aksana.Patrubeika_Practice.Exceptions\Lab12_Aksana.Patrubeika_Practice.Exceptions\bin\Debug\net6.0\Lab12_Aksana.Patrubeika_Practice.Exceptions.exe
+D:\C#\LABS\Lab12_Aksana.Patrubeika_Practice.Exceptions\Lab12_Aksana.Patrubeika_Practice.Exceptions\bin\Debug\net6.0\Lab12_Aksana.Patrubeika_Practice.Exceptions.deps.json
+D:\C#\LABS\Lab12_Aksana.Patrubeika_Practice.Exceptions\Lab12_Aksana.Patrubeika_Practice.Exceptions\bin\Debug\net6.0\Lab12_Aksana.Patrubeika_Practice.Exceptions.runtimeconfig.json
+D:\C#\LABS\Lab12_Aksana.Patrubeika_Practice.Exceptions\Lab12_Aksana.Patrubeika_Practice.Exceptions\bin\Debug\net6.0\Lab12_Aksana.Patrubeika_Practice.Exceptions.dll
+D:\C#\LABS\Lab12_Aksana.Patrubeika_Practice.Exceptions\Lab12_Aksana.Patrubeika_Practice.Exceptions\bin\Debug\net6.0\Lab12_Aksana.Patrubeika_Practice.Exceptions.pdb
+D:\C#\LABS\Lab12_Aksana.Patrubeika_Practice.Exceptions\Lab12_Aksana.Patrubeika_Practice.Exceptions\obj\Debug\net6.0\Lab12_Aksana.Patrubeika_Practice.Exceptions.csproj.AssemblyReference.cache
+D:\C#\LABS\Lab12_Aksana.Patrubeika_Practice.Exceptions\Lab12_Aksana.Patrubeika_Practice.Exceptions\obj\Debug\net6.0\Lab12_Aksana.Patrubeika_Practice.Exceptions.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\LABS\Lab12_Aksana.Patrubeika_Practice.Exceptions\Lab12_Aksana.Patrubeika_Practice.Exceptions\obj\Debug\net6.0\Lab12_Aksana.Patrubeika_Practice.Exceptions.AssemblyInfoInputs.cache
+D:\C#\LABS\Lab12_Aksana.Patrubeika_Practice.Exceptions\Lab12_Aksana.Patrubeika_Practice.Exceptions\obj\Debug\net6.0\Lab12_Aksana.Patrubeika_Practice.Exceptions.AssemblyInfo.cs
+D:\C#\LABS\Lab12_Aksana.Patrubeika_Practice.Exceptions\Lab12_Aksana.Patrubeika_Practice.Exceptions\obj\Debug\net6.0\Lab12_Aksana.Patrubeika_Practice.Exceptions.csproj.CoreCompileInputs.cache
+D:\C#\LABS\Lab12_Aksana.Patrubeika_Practice.Exceptions\Lab12_Aksana.Patrubeika_Practice.Exceptions\obj\Debug\net6.0\Lab12_Aksana.Patrubeika_Practice.Exceptions.dll
+D:\C#\LABS\Lab12_Aksana.Patrubeika_Practice.Exceptions\Lab12_Aksana.Patrubeika_Practice.Exceptions\obj\Debug\net6.0\refint\Lab12_Aksana.Patrubeika_Practice.Exceptions.dll
+D:\C#\LABS\Lab12_Aksana.Patrubeika_Practice.Exceptions\Lab12_Aksana.Patrubeika_Practice.Exceptions\obj\Debug\net6.0\Lab12_Aksana.Patrubeika_Practice.Exceptions.pdb
+D:\C#\LABS\Lab12_Aksana.Patrubeika_Practice.Exceptions\Lab12_Aksana.Patrubeika_Practice.Exceptions\obj\Debug\net6.0\Lab12_Aksana.Patrubeika_Practice.Exceptions.genruntimeconfig.cache
+D:\C#\LABS\Lab12_Aksana.Patrubeika_Practice.Exceptions\Lab12_Aksana.Patrubeika_Practice.Exceptions\obj\Debug\net6.0\ref\Lab12_Aksana.Patrubeika_Practice.Exceptions.dll
