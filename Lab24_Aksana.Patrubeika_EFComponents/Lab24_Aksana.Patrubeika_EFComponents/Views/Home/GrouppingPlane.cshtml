@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Lab24_Aksana.Patrubeika_EFComponents.Models.EnrollmentTripGroup>
+
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Count</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnrollmentName)
+            </td>
+            <td>
+                @item.CompanyCount
+            </td>
+        </tr>
+    }
+</table>

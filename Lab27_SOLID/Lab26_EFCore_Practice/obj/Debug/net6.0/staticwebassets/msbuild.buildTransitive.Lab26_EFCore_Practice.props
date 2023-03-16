@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Lab26_EFCore_Practice.props" />
+</Project>

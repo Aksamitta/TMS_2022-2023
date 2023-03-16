@@ -1,0 +1,43 @@
+﻿@model List<Trip> 
+@{
+    ViewData["Title"] = "All Trips"; 
+}
+
+@using (Html.BeginForm())
+{
+    <p>
+        Find by Plane: @Html.TextBox("search")
+        <input type="submit" value="Search" />
+    </p>
+}
+
+<table class="table"> 
+    <tr>
+        <th>#</th>
+        <th>Company</th>
+        <th>Plane</th>
+        <th>Town to</th>
+        <th>Town from</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+                      <tr> 
+                              <td>
+                @Html.DisplayFor(modelItem => item.TripId)
+                              </td>
+                          <td>
+                @Html.DisplayFor(modelItem => item.CompanyId)
+                          </td>
+                           <td>
+                @Html.DisplayFor(modelItem => item.Plane)
+                           </td>
+                           <td>
+                @Html.DisplayFor(modelItem => item.TownTo)
+                           </td>
+                           <td>
+                @Html.DisplayFor(modelItem => item.TownFrom)
+                           </td>                           
+
+                      </tr>
+    } 
+ </table>

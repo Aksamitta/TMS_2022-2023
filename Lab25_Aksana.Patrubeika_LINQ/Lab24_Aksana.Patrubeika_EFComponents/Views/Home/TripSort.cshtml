@@ -1,0 +1,62 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<Trip>
+@{
+    ViewData["Title"] = "All Trips";
+}
+
+@using (Html.BeginForm())
+{
+    <p>
+        Find by Plane: @Html.TextBox("SearchString")  
+        <input type="submit" value="Search" /></p>
+}
+
+
+<form asp-controller="Home" asp-action="FindPlane" method="post">
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" placeholder="Plane" name="plane">
+                <label for="floatingInput">Plane</label>
+            </div>            
+        </div>
+    </div>
+</div>
+<br /> <button type="submit" class="btn btn-outline-primary">Search</button>
+</form>
+
+
+<table class="table">
+    <tr>        
+        <th>
+            <a asp-action="TripSort" asp-route-sortOrder="@ViewBag.TripSort">
+                Trip Id
+            </a>
+        </th>
+        <th>
+            <a asp-action="TripSort" asp-route-sortOrder="@ViewBag.CompanySort">
+                Company Id
+            </a>
+        </th>
+        <th>
+            <a asp-action="TripSort" asp-route-sortOrder="@ViewBag.PlaneSort">
+                Plane
+            </a>
+        </th>
+        <th>
+            <a asp-action="TripSort" asp-route-sortOrder="@ViewBag.TownFromSort">
+                Town From
+            </a>
+        </th>
+        <th>
+            <a asp-action="TripSort" asp-route-sortOrder="@ViewBag.TownToSort">
+                Town To
+            </a>
+        </th>
+    </tr>
+    @foreach (Trip u in Model)
+    {
+        <tr><td>@u.TripId</td><td>@u.Company?.CompanyName</td><td>@u.Plane</td><td>@u.TownFrom</td><td>@u.TownTo</td></tr>
+    }
+</table>
