@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Add Auto"; 
+}
+
+<form asp-controller="Home" asp-action="Create" method="post">
+ <p>
+            Model: <br/>
+            <input name="AutoModel"/>
+        </p>
+        <p>
+            Year: <br/>
+            <input name="Year" type="number"/>
+        </p>
+        <p>
+            Price: <br/>
+            <input name="Price" type="number"/>
+        </p>
+
+        <button class="btn btn-primary" type="submit">Add Auto</button>
+</form>
