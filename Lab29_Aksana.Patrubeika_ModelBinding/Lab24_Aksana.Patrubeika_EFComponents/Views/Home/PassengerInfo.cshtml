@@ -1,0 +1,44 @@
+﻿@model List<PassengerInfoView> 
+@{
+    ViewData["Title"] = "All Passenger"; 
+}
+
+<table class="table"> 
+    <tr>
+        <th>#</th>
+        <th>Passenger Name</th>
+        <th>Trip</th>
+        <th>Plane</th>
+        <th>Town from</th>
+        <th>Town to</th>
+        <th>Company</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+                          <tr> 
+                                  <td>
+                @Html.DisplayFor(modelItem => item.Id)
+                                  </td>
+                              <td>
+                @Html.DisplayFor(modelItem => item.Name)
+                              </td>
+                               <td>
+                @Html.DisplayFor(modelItem => item.TripId)
+                               </td>
+                                   <td>
+                @Html.DisplayFor(modelItem => item.Plane)
+                                   </td>
+                                   <td>
+                @Html.DisplayFor(modelItem => item.TownFrom)
+                                   </td>   
+                               <td>
+                @Html.DisplayFor(modelItem => item.TownTo)
+                               </td>
+                                    <td>
+                @Html.DisplayFor(modelItem => item.CompanyName)
+                                   </td>   
+                                                      
+
+                          </tr>
+    } 
+ </table>

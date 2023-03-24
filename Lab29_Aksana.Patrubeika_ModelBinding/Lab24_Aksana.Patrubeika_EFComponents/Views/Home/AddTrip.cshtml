@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Add Trip"; 
+}
+
+<form asp-controller="Home" asp-action="AddTrip" method="post">
+        <p>
+            CompanyId: <br/>
+            <input name="Company"/>
+        </p>
+        <p>
+            Plane: <br/>
+            <input name="Plane" type="text"/>
+        </p>
+        <p>
+            TownFrom: <br/>
+            <input name="Town From" type="text"/>
+        </p>
+        <p>
+            TownTo: <br/>
+            <input name="Town To" type="text"/>
+        </p>
+
+        <button class="btn btn-primary" type="submit">Add Trip</button>
+</form>

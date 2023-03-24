@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Add Auto"; 
+}
+
+<form asp-controller="Home" asp-action="CreatePass" method="post">
+ <p>
+            Name: <br/>
+            <input name="Name"/>
+        </p>
+        <p>
+            Password: <br/>
+            <input name="Password" type="text"/>
+        </p>
+        <p>
+            PasswordConfirm: <br/>
+            <input name="PasswordConfirm" type="text"/>
+        </p>
+        <p>
+            Birth: <br/>
+            <input name="Birth" type="text"/>
+        </p>
+        <p>
+            Email: <br/>
+            <input name="Email" type="text"/>
+        </p>
+
+        <button class="btn btn-primary" type="submit">Add Auto</button>
+</form>

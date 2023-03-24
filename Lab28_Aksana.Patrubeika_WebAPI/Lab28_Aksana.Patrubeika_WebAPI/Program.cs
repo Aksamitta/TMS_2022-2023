@@ -1,5 +1,7 @@
 using Lab28_Aksana.Patrubeika_WebAPI.Data;
 using Microsoft.EntityFrameworkCore;
+using Swashbuckle.Swagger;
+using Microsoft.OpenApi.Models;
 
 namespace Lab28_Aksana.Patrubeika_WebAPI
 {
@@ -12,13 +14,27 @@ namespace Lab28_Aksana.Patrubeika_WebAPI
             // Add services to the container.
 
             builder.Services.AddControllers();
-
-            builder.Services.AddDbContext<ApiTestContext>(options => options.UseInMemoryDatabase("ContactsDb"));
-            builder.Services.AddDbContext<LibraryContext>(options => options.UseInMemoryDatabase("ContactsDb"));
+            builder.Services.AddDbContext<LibraryContext>(options => options.UseInMemoryDatabase("LibrariesDb"));
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(
+                options =>
+                {
+                    var basePath = AppContext.BaseDirectory;
+                    var xmlPath = Path.Combine(basePath, "Lab28_Aksana.Patrubeika_WebAPI.xml");
+                    options.IncludeXmlComments(xmlPath);
+                    options.SwaggerDoc("v1", new OpenApiInfo
+                    {
+                        Version = "v1",
+                        Title = "Books library",
+                        Contact = new OpenApiContact
+                        {
+                            Name = "Aksana Patrubeika",
+                            Url = new Uri("https://github.com/Aksamitta")
+                        },
+                    });
+                });
 
             var app = builder.Build();
 

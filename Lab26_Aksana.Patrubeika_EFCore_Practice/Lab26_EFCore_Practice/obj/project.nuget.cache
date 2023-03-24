@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7968gueAYabKrgJD4NOQnEXSA9UC1G18aJUyhOo7MOSayLO1FaP+qkh9srBDxVChi4rUzWguNgh6tvTPMSL6fg==",
+  "dgSpecHash": "rbWMiFt07GjWsa7x9rLbSVlmKuXemsdJx7PtkJxb22bifUh1niO6HaKg3o26Mvhn/k3s27hNOWMM6UaKF/gOGw==",
   "success": true,
-  "projectFilePath": "D:\\C#\\LABS\\TMS_2022-2023\\Lab26_EFCore_Practice\\Lab26_EFCore_Practice\\Lab26_EFCore_Practice.csproj",
+  "projectFilePath": "D:\\C#\\LABS\\TMS_2022-2023\\Lab26_Aksana.Patrubeika_EFCore_Practice\\Lab26_EFCore_Practice\\Lab26_EFCore_Practice.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tom\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Tom\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

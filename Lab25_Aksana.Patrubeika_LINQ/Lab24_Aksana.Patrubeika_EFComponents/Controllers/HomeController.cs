@@ -25,7 +25,7 @@ namespace Lab24_Aksana.Patrubeika_EFComponents.Controllers
         {
             using (var db = new AirLineContext())
             {
-                var tripFirst = db.Trips.Include(c => c.Company).OrderByDescending(t => t.Plane).ToList();
+                var tripFirst = db.Trips.Include(c => c.Company).OrderBy(t => t.TripId).ToList();
                 
                 if (!String.IsNullOrEmpty(search))
                 {

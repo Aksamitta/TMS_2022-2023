@@ -1,0 +1,81 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Lab24_Aksana.Patrubeika_EFComponents
+build_property.RootNamespace = Lab24_Aksana.Patrubeika_EFComponents
+build_property.ProjectDir = D:\C#\LABS\TMS_2022-2023\Lab29_Aksana.Patrubeika_ModelBinding\Lab24_Aksana.Patrubeika_EFComponents\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\C#\LABS\TMS_2022-2023\Lab29_Aksana.Patrubeika_ModelBinding\Lab24_Aksana.Patrubeika_EFComponents
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/C\#/LABS/TMS_2022-2023/Lab29_Aksana.Patrubeika_ModelBinding/Lab24_Aksana.Patrubeika_EFComponents/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Lab29_Aksana.Patrubeika_ModelBinding/Lab24_Aksana.Patrubeika_EFComponents/Views/Home/AddPassenger.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRQYXNzZW5nZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Lab29_Aksana.Patrubeika_ModelBinding/Lab24_Aksana.Patrubeika_EFComponents/Views/Home/AddTrip.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRUcmlwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Lab29_Aksana.Patrubeika_ModelBinding/Lab24_Aksana.Patrubeika_EFComponents/Views/Home/GrouppingPlane.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHcm91cHBpbmdQbGFuZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Lab29_Aksana.Patrubeika_ModelBinding/Lab24_Aksana.Patrubeika_EFComponents/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Lab29_Aksana.Patrubeika_ModelBinding/Lab24_Aksana.Patrubeika_EFComponents/Views/Home/Passenger.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYXNzZW5nZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Lab29_Aksana.Patrubeika_ModelBinding/Lab24_Aksana.Patrubeika_EFComponents/Views/Home/PassengerInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYXNzZW5nZXJJbmZvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Lab29_Aksana.Patrubeika_ModelBinding/Lab24_Aksana.Patrubeika_EFComponents/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Lab29_Aksana.Patrubeika_ModelBinding/Lab24_Aksana.Patrubeika_EFComponents/Views/Home/Trip.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUcmlwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Lab29_Aksana.Patrubeika_ModelBinding/Lab24_Aksana.Patrubeika_EFComponents/Views/Home/TripSort.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUcmlwU29ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Lab29_Aksana.Patrubeika_ModelBinding/Lab24_Aksana.Patrubeika_EFComponents/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Lab29_Aksana.Patrubeika_ModelBinding/Lab24_Aksana.Patrubeika_EFComponents/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Lab29_Aksana.Patrubeika_ModelBinding/Lab24_Aksana.Patrubeika_EFComponents/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Lab29_Aksana.Patrubeika_ModelBinding/Lab24_Aksana.Patrubeika_EFComponents/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Lab29_Aksana.Patrubeika_ModelBinding/Lab24_Aksana.Patrubeika_EFComponents/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Lab29_Aksana.Patrubeika_ModelBinding/Lab24_Aksana.Patrubeika_EFComponents/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-q7ig2ght73

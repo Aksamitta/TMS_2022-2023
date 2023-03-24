@@ -18,28 +18,41 @@ namespace Lab28_Aksana.Patrubeika_WebAPI.Controllers
         }
 
 
-        [HttpGet]   //read
+        /// <summary>
+        /// Get all books from the library
+        /// </summary>
+        /// <remarks>This method shows all books which there are in the library</remarks>
+        /// <returns>List of books</returns>
+        [HttpGet] 
+        [Route("GetBooks")]
         public IEnumerable<Book> GetBooks()
         {
             return _libriryContext.Books.ToList();
         }
 
-        [HttpGet]   //Groupping books by ganre
-        public IEnumerable<Book> GroupBooks([FromRoute] string ganre)
+        /// <summary>
+        /// Get books by Id of the book
+        /// </summary>
+        /// <remarks>This method shows book with searching id</remarks>
+        /// <param name="id">The Id of the desired book</param>
+        [HttpGet]
+        [Route("GetBooksById/{id}")]
+        public IActionResult GetBooksByAId([FromRoute]int id)
         {
-            var book = _libriryContext.Books.Find(ganre);
+            var book = _libriryContext.Books.Find(id);
 
-            if (ganre != null)
+            if (book != null)
             {
-                if (book.Ganre == ganre)
-                {
-                    return _libriryContext.Books.ToList();
-                }                   
-            }
-            return _libriryContext.Books.ToList();
+                return Ok(book);
+            };
+            return NotFound();
         }
 
-        [HttpPost]  //Add
+        /// <summary>
+        /// Add book to the library
+        /// </summary>
+        /// <remarks>This method added a book to the library, enter information about the book</remarks>
+        [HttpPost("PostBooks")]  //Add
         public IEnumerable<Book> PostBooks(AddBooksViewModel addBook)
         {
             var book = new Book
@@ -56,11 +69,15 @@ namespace Lab28_Aksana.Patrubeika_WebAPI.Controllers
             return _libriryContext.Books.ToList();
         }
 
+        /// <summary>
+        /// Update information about a book
+        /// </summary>
+        /// <remarks>This method updates information about book in the library</remarks>
+        /// <param name="id">The Id of the desired book</param>
         [HttpPut]   //Update
-        [Route("{id}")]    //чтобы искать по айдишнику, т.е. указываем условно путь
+        [Route("PutBook/{id}")] 
         public IActionResult PutBook([FromRoute] int id, AddBooksViewModel addBook)    //посмотреть все атрибуты для чего они
-        {
-            //метод нахождения по какому-то полю
+        {            
             var book = _libriryContext.Books.Find(id);
 
             if (book != null)
@@ -77,9 +94,14 @@ namespace Lab28_Aksana.Patrubeika_WebAPI.Controllers
             return NotFound();
         }
 
+        /// <summary>
+        /// Delete a book from library
+        /// </summary>
+        /// <remarks>This method deletes a book from library, enter the id of the book</remarks>
+        /// <param name="id">The Id of the desired book</param>
         [HttpDelete]
-        [Route("{id}")]
-        public IActionResult DeleteBook([FromRoute] int id)    //посмотреть все атрибуты для чего они
+        [Route("DeleteBook/{id}")]
+        public IActionResult DeleteBook([FromRoute] int id) 
         {
             //метод нахождения по какому-то полю
             var book = _libriryContext.Books.Find(id);

@@ -1,0 +1,29 @@
+﻿<div>
+
+    <form asp-controller="Home" asp-action="AddCar" method="post">
+      
+        <p>
+            Model: <br/>
+            <input name="Model"/>
+        </p>
+        <p>
+            Year: <br/>
+            <input name="Year" type="number"/>
+        </p>
+        <p>
+            Engine: <br/>
+            <input name="Engine" type="text"/>
+        </p>
+        <p>
+            Price: <br/>
+            <input name="Price" type="number"/>
+        </p>       
+        <p>
+            Color: <br/>
+            <input name="Color" type="text"/>
+        </p>
+
+        <button class="btn btn-primary" type="submit">Add Car</button>
+
+    </form>
+</div>

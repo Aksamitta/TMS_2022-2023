@@ -41,3 +41,9 @@ D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_
 D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
 D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.xml
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.xml
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\System.Web.Http.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Swashbuckle.Core.dll

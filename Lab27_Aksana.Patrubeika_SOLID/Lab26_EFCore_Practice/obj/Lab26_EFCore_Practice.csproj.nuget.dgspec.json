@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\LABS\\TMS_2022-2023\\Lab27_SOLID\\Lab26_EFCore_Practice\\Lab26_EFCore_Practice.csproj": {}
+    "D:\\C#\\LABS\\TMS_2022-2023\\Lab27_Aksana.Patrubeika_SOLID\\Lab26_EFCore_Practice\\Lab26_EFCore_Practice.csproj": {}
   },
   "projects": {
-    "D:\\C#\\LABS\\TMS_2022-2023\\Lab27_SOLID\\Lab26_EFCore_Practice\\Lab26_EFCore_Practice.csproj": {
+    "D:\\C#\\LABS\\TMS_2022-2023\\Lab27_Aksana.Patrubeika_SOLID\\Lab26_EFCore_Practice\\Lab26_EFCore_Practice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\LABS\\TMS_2022-2023\\Lab27_SOLID\\Lab26_EFCore_Practice\\Lab26_EFCore_Practice.csproj",
+        "projectUniqueName": "D:\\C#\\LABS\\TMS_2022-2023\\Lab27_Aksana.Patrubeika_SOLID\\Lab26_EFCore_Practice\\Lab26_EFCore_Practice.csproj",
         "projectName": "Lab26_EFCore_Practice",
-        "projectPath": "D:\\C#\\LABS\\TMS_2022-2023\\Lab27_SOLID\\Lab26_EFCore_Practice\\Lab26_EFCore_Practice.csproj",
+        "projectPath": "D:\\C#\\LABS\\TMS_2022-2023\\Lab27_Aksana.Patrubeika_SOLID\\Lab26_EFCore_Practice\\Lab26_EFCore_Practice.csproj",
         "packagesPath": "C:\\Users\\Tom\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\LABS\\TMS_2022-2023\\Lab27_SOLID\\Lab26_EFCore_Practice\\obj\\",
+        "outputPath": "D:\\C#\\LABS\\TMS_2022-2023\\Lab27_Aksana.Patrubeika_SOLID\\Lab26_EFCore_Practice\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
