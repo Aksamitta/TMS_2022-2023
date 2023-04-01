@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lab28_Aksana.Patrubeika_WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:Lab28_Aksana.Patrubeika_WebAPI.Controllers.LibrariesController.GetBooks">
+            <summary>
+            Get all books from the library
+            </summary>
+            <remarks>This method shows all books which there are in the library</remarks>
+            <returns>List of books</returns>
+        </member>
+        <member name="M:Lab28_Aksana.Patrubeika_WebAPI.Controllers.LibrariesController.GetBooksByAId(System.Int32)">
+            <summary>
+            Get books by Id of the book
+            </summary>
+            <remarks>This method shows book with searching id</remarks>
+            <param name="id">The Id of the desired book</param>
+        </member>
+        <member name="M:Lab28_Aksana.Patrubeika_WebAPI.Controllers.LibrariesController.PostBooks(Lab28_Aksana.Patrubeika_WebAPI.Models.AddBooksViewModel)">
+            <summary>
+            Add book to the library
+            </summary>
+            <remarks>This method added a book to the library, enter information about the book</remarks>
+        </member>
+        <member name="M:Lab28_Aksana.Patrubeika_WebAPI.Controllers.LibrariesController.PutBook(System.Int32,Lab28_Aksana.Patrubeika_WebAPI.Models.AddBooksViewModel)">
+            <summary>
+            Update information about a book
+            </summary>
+            <remarks>This method updates information about book in the library</remarks>
+            <param name="id">The Id of the desired book</param>
+        </member>
+        <member name="M:Lab28_Aksana.Patrubeika_WebAPI.Controllers.LibrariesController.DeleteBook(System.Int32)">
+            <summary>
+            Delete a book from library
+            </summary>
+            <remarks>This method deletes a book from library, enter the id of the book</remarks>
+            <param name="id">The Id of the desired book</param>
+        </member>
+    </members>
+</doc>

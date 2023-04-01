@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Lab28_Aksana.Patrubeika_WebAPI.props" />
+</Project>

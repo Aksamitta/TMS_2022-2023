@@ -1,0 +1,98 @@
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\appsettings.Development.json
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\appsettings.json
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.exe
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.deps.json
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.runtimeconfig.json
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.pdb
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.csproj.AssemblyReference.cache
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.AssemblyInfoInputs.cache
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.AssemblyInfo.cs
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.csproj.CoreCompileInputs.cache
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\staticwebassets\msbuild.Lab28_Aksana.Patrubeika_WebAPI.Microsoft.AspNetCore.StaticWebAssets.props
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.Lab28_Aksana.Patrubeika_WebAPI.props
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Lab28_Aksana.Patrubeika_WebAPI.props
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Lab28_Aksana.Patrubeika_WebAPI.props
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\staticwebassets.pack.json
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\staticwebassets.build.json
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\staticwebassets.development.json
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\scopedcss\bundle\Lab28_Aksana.Patrubeika_WebAPI.styles.css
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.csproj.CopyComplete
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\refint\Lab28_Aksana.Patrubeika_WebAPI.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.pdb
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.genruntimeconfig.cache
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\ref\Lab28_Aksana.Patrubeika_WebAPI.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.xml
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.xml
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\System.Web.Http.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\C#\LABS\TMS_2022-2023\Lab28_Aksana.Patrubeika_WebAPI\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Swashbuckle.Core.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\appsettings.Development.json
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\appsettings.json
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.exe
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.deps.json
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.runtimeconfig.json
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.pdb
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.xml
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\System.Web.Http.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\bin\Debug\net6.0\Swashbuckle.Core.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.csproj.AssemblyReference.cache
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.AssemblyInfoInputs.cache
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.AssemblyInfo.cs
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.csproj.CoreCompileInputs.cache
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\staticwebassets\msbuild.Lab28_Aksana.Patrubeika_WebAPI.Microsoft.AspNetCore.StaticWebAssets.props
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.Lab28_Aksana.Patrubeika_WebAPI.props
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Lab28_Aksana.Patrubeika_WebAPI.props
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Lab28_Aksana.Patrubeika_WebAPI.props
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\staticwebassets.pack.json
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\staticwebassets.build.json
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\staticwebassets.development.json
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\scopedcss\bundle\Lab28_Aksana.Patrubeika_WebAPI.styles.css
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.csproj.CopyComplete
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\refint\Lab28_Aksana.Patrubeika_WebAPI.dll
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.xml
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.pdb
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\Lab28_Aksana.Patrubeika_WebAPI.genruntimeconfig.cache
+D:\C#\LABS\TMS_2022-2023\Lab31_Aksana.Patrubeika_Test MVC\Lab28_Aksana.Patrubeika_WebAPI\obj\Debug\net6.0\ref\Lab28_Aksana.Patrubeika_WebAPI.dll
