@@ -26,7 +26,7 @@ namespace Lab31_Aksana.Patrubeika_Collections
         }
 
         //только для чтения, доступ к закрытому полю класса на чтение
-        public int Count => _cars.Count;        
+        public int Count => _cars.Count;
         public string Name { get; set; }
 
         public int Add(Car car)
@@ -43,44 +43,55 @@ namespace Lab31_Aksana.Patrubeika_Collections
             }
             return -1;
         }
-        
+
 
         public IEnumerator GetEnumerator()
-        {
-            foreach (var car in _cars)
-            {
-                yield return car;
-            }
-        }
-
-        public IEnumerable GetSumElements()
         {
             var sum = 0;
             for (int i = 0; i < _cars.Count; i++)
             {
-                sum += i;                
+                sum = i + (i + 1);
+                yield return $"for {i}: {sum}";
             }
-            yield return sum;
         }
+
+        //public IEnumerator GetEnumerator()
+        //{
+        //    foreach (var car in _cars)
+        //    {
+        //        yield return car;
+        //    }
+        //}
+
+        //public IEnumerable GetSumElements()
+        //{
+        //    var sum = 0;
+        //    for (int i = 0; i < _cars.Count; i++)
+        //    {
+        //        sum = i + (i + 1);
+        //        yield return $"for {i}: {sum}";
+        //    }            
+        //}
 
         public IEnumerable GetNames()
-        {           
+        {
             foreach (var car in _cars)
             {
-                yield return car.Model;
+                yield return $"{car.Model} {car.Number}";
             }
 
+            //}
+
+            //public IEnumerator<Car> GetEnumerator()
+            //{
+            //    return _cars.GetEnumerator();
+            //}
+
+            //IEnumerator IEnumerable.GetEnumerator()
+            //{
+            //    return _cars.GetEnumerator();
+            //}
         }
-
-        //public IEnumerator<Car> GetEnumerator()
-        //{
-        //    return _cars.GetEnumerator();
-        //}
-
-        //IEnumerator IEnumerable.GetEnumerator()
-        //{
-        //    return _cars.GetEnumerator();
-        //}
     }
     
 }

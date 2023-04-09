@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Lab30_Aksana.Patrubeika_Async/1.0.0": {
+        "runtime": {
+          "Lab30_Aksana.Patrubeika_Async.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lab30_Aksana.Patrubeika_Async/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

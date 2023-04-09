@@ -1,0 +1,15 @@
+D:\C#\LABS\TMS_2022-2023\Lab30_Aksana.Patrubeika_Async\Lab30_Aksana.Patrubeika_Async\bin\Debug\net6.0\Lab30_Aksana.Patrubeika_Async.exe
+D:\C#\LABS\TMS_2022-2023\Lab30_Aksana.Patrubeika_Async\Lab30_Aksana.Patrubeika_Async\bin\Debug\net6.0\Lab30_Aksana.Patrubeika_Async.deps.json
+D:\C#\LABS\TMS_2022-2023\Lab30_Aksana.Patrubeika_Async\Lab30_Aksana.Patrubeika_Async\bin\Debug\net6.0\Lab30_Aksana.Patrubeika_Async.runtimeconfig.json
+D:\C#\LABS\TMS_2022-2023\Lab30_Aksana.Patrubeika_Async\Lab30_Aksana.Patrubeika_Async\bin\Debug\net6.0\Lab30_Aksana.Patrubeika_Async.dll
+D:\C#\LABS\TMS_2022-2023\Lab30_Aksana.Patrubeika_Async\Lab30_Aksana.Patrubeika_Async\bin\Debug\net6.0\Lab30_Aksana.Patrubeika_Async.pdb
+D:\C#\LABS\TMS_2022-2023\Lab30_Aksana.Patrubeika_Async\Lab30_Aksana.Patrubeika_Async\obj\Debug\net6.0\Lab30_Aksana.Patrubeika_Async.csproj.AssemblyReference.cache
+D:\C#\LABS\TMS_2022-2023\Lab30_Aksana.Patrubeika_Async\Lab30_Aksana.Patrubeika_Async\obj\Debug\net6.0\Lab30_Aksana.Patrubeika_Async.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\LABS\TMS_2022-2023\Lab30_Aksana.Patrubeika_Async\Lab30_Aksana.Patrubeika_Async\obj\Debug\net6.0\Lab30_Aksana.Patrubeika_Async.AssemblyInfoInputs.cache
+D:\C#\LABS\TMS_2022-2023\Lab30_Aksana.Patrubeika_Async\Lab30_Aksana.Patrubeika_Async\obj\Debug\net6.0\Lab30_Aksana.Patrubeika_Async.AssemblyInfo.cs
+D:\C#\LABS\TMS_2022-2023\Lab30_Aksana.Patrubeika_Async\Lab30_Aksana.Patrubeika_Async\obj\Debug\net6.0\Lab30_Aksana.Patrubeika_Async.csproj.CoreCompileInputs.cache
+D:\C#\LABS\TMS_2022-2023\Lab30_Aksana.Patrubeika_Async\Lab30_Aksana.Patrubeika_Async\obj\Debug\net6.0\Lab30_Aksana.Patrubeika_Async.dll
+D:\C#\LABS\TMS_2022-2023\Lab30_Aksana.Patrubeika_Async\Lab30_Aksana.Patrubeika_Async\obj\Debug\net6.0\refint\Lab30_Aksana.Patrubeika_Async.dll
+D:\C#\LABS\TMS_2022-2023\Lab30_Aksana.Patrubeika_Async\Lab30_Aksana.Patrubeika_Async\obj\Debug\net6.0\Lab30_Aksana.Patrubeika_Async.pdb
+D:\C#\LABS\TMS_2022-2023\Lab30_Aksana.Patrubeika_Async\Lab30_Aksana.Patrubeika_Async\obj\Debug\net6.0\Lab30_Aksana.Patrubeika_Async.genruntimeconfig.cache
+D:\C#\LABS\TMS_2022-2023\Lab30_Aksana.Patrubeika_Async\Lab30_Aksana.Patrubeika_Async\obj\Debug\net6.0\ref\Lab30_Aksana.Patrubeika_Async.dll

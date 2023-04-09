@@ -6,20 +6,7 @@ namespace TestProject_Lab31
 {
     [TestClass]
     public class UnitTest1
-    {
-        //[TestMethod]
-        //public void Get_PositiveTesting_ShouldReturnNotNull()
-        //{
-        //    //Arrange
-        //    var controller = new WeatherForecastController();
-
-        //    //Act
-        //    var res = controller.Get();
-
-        //    //Assert
-        //    Assert.IsNotNull(res);
-        //}
-
+    {      
         [TestMethod]
         public void Get_PositiveTesting_ShouldReturnNotNull()
         {
@@ -33,6 +20,19 @@ namespace TestProject_Lab31
             Assert.IsNotNull(res);
         }
 
+        //[TestMethod]
+        //public void Get_PositiveTesting_ShouldReturnFiveObjects()
+        //{
+        //    Arrange
+        //    var controller = new WeatherForecastController();
+
+        //    Act
+        //    var res = controller.Get();
+
+        //    Assert
+        //    Assert.AreEqual(5, res.Count());
+        //}
+
         [TestMethod]
         public void Get_PositiveTesting_ShouldReturnFiveObjects()
         {
@@ -43,7 +43,7 @@ namespace TestProject_Lab31
             var res = controller.Get();
 
             //Assert
-            Assert.AreEqual(5, res.Count());
+            Assert.
         }
 
         [TestMethod]

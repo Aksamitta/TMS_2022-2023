@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "rD6s9zEhM4hX8N801RXFgM0GXsFFV6xi3jppxfLilaA9lByND1hoESgsyT6eo69vrHdnBIkVL2WImxjcJVI9dA==",
+  "success": true,
+  "projectFilePath": "D:\\C#\\LABS\\TMS_2022-2023\\Lab33_Aksana.Patrubeika_GC\\Lab31_Aksana.Patrubeika_Collections\\Lab31_Aksana.Patrubeika_Collections.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tom\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Tom\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Tom\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\Tom\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

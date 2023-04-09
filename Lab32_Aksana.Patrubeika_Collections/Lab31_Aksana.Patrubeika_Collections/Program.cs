@@ -9,7 +9,8 @@ namespace Lab31_Aksana.Patrubeika_Collections
         {
             #region Task
             //Создать собственную коллекцию реализующий IEnumerable интерфейс,
-            //который принимает в себя объекты и при перечислении выдает сумму со следующим элементом
+            //который принимает в себя объекты и при перечислении выдает сумму
+            //со следующим элементом
             #endregion
 
 
@@ -43,26 +44,35 @@ namespace Lab31_Aksana.Patrubeika_Collections
                 parking.Add(car);
             }
 
-            //interfase methods
-            Console.WriteLine("Cars at parking:");
-            foreach (var car in parking)
-            {
-                Console.WriteLine($"{car};");
-            }
+            ////interfase methods using GetEnumerator
+            //Console.WriteLine("Cars at parking:");
+            //foreach (var car in parking)
+            //{
+            //    Console.WriteLine($"{car};");
+            //}
 
             Console.WriteLine();
 
+            //show names using method Enumerable GetName
             Console.WriteLine("Car's model");
             foreach (var name in parking.GetNames())
             {
-                Console.Write($"{name}, ");
+                Console.WriteLine($"{name}, ");
             }
 
             Console.WriteLine();
             Console.WriteLine();
 
+            //Console.WriteLine("Using IEnumerable.");
+            //Console.WriteLine("Sum:");
+            //foreach (var car in parking.GetSumElements())
+            //{
+            //    Console.WriteLine(car);
+            //}
+
+            Console.WriteLine("Using IEnumerator.");
             Console.WriteLine("Sum:");
-            foreach (var car in parking.GetSumElements())
+            foreach (var car in parking)
             {
                 Console.WriteLine(car);
             }
@@ -80,6 +90,7 @@ namespace Lab31_Aksana.Patrubeika_Collections
             Console.ReadLine();
         }
 
+        #region attempt Book
         interface IBookCollection : IEnumerable<string>
         {
             void Add(string book);
@@ -87,8 +98,8 @@ namespace Lab31_Aksana.Patrubeika_Collections
             IEnumerable<string> GetElements();
         }
 
-         
 
+        
         public class BookCollection : IBookCollection
         {
             private string[] _internalArray;
@@ -149,5 +160,6 @@ namespace Lab31_Aksana.Patrubeika_Collections
                 throw new NotImplementedException();
             }
         }
+        #endregion
     }
 }

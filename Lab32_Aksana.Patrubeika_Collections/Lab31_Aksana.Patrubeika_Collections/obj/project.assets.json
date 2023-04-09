@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\LABS\\TMS_2022-2023\\Lab31_Aksana.Patrubeika_Collections\\Lab31_Aksana.Patrubeika_Collections\\Lab31_Aksana.Patrubeika_Collections.csproj",
+      "projectUniqueName": "D:\\C#\\LABS\\TMS_2022-2023\\Lab32_Aksana.Patrubeika_Collections\\Lab31_Aksana.Patrubeika_Collections\\Lab31_Aksana.Patrubeika_Collections.csproj",
       "projectName": "Lab31_Aksana.Patrubeika_Collections",
-      "projectPath": "D:\\C#\\LABS\\TMS_2022-2023\\Lab31_Aksana.Patrubeika_Collections\\Lab31_Aksana.Patrubeika_Collections\\Lab31_Aksana.Patrubeika_Collections.csproj",
+      "projectPath": "D:\\C#\\LABS\\TMS_2022-2023\\Lab32_Aksana.Patrubeika_Collections\\Lab31_Aksana.Patrubeika_Collections\\Lab31_Aksana.Patrubeika_Collections.csproj",
       "packagesPath": "C:\\Users\\Tom\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\LABS\\TMS_2022-2023\\Lab31_Aksana.Patrubeika_Collections\\Lab31_Aksana.Patrubeika_Collections\\obj\\",
+      "outputPath": "D:\\C#\\LABS\\TMS_2022-2023\\Lab32_Aksana.Patrubeika_Collections\\Lab31_Aksana.Patrubeika_Collections\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
