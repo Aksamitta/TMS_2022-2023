@@ -12,19 +12,7 @@ namespace Lab31_Aksana.Patrubeika_Collections
             //который принимает в себя объекты и при перечислении выдает сумму
             //со следующим элементом
             #endregion
-
-
-            //var book = new BookCollection();
-            ////book.Add("book1");
-            //for (int i = 0; i < 5; i++)
-            //{
-            //    book.Add(Console.ReadLine());
-            //}
-
-            //foreach (int n in book)
-            //{
-            //    Console.WriteLine(n);
-            //}
+           
 
             var cars = new List<Car>()
             {
@@ -90,76 +78,6 @@ namespace Lab31_Aksana.Patrubeika_Collections
             Console.ReadLine();
         }
 
-        #region attempt Book
-        interface IBookCollection : IEnumerable<string>
-        {
-            void Add(string book);
-
-            IEnumerable<string> GetElements();
-        }
-
-
-        
-        public class BookCollection : IBookCollection
-        {
-            private string[] _internalArray;
-            private int _currentIndex;
-
-            public BookCollection(int size)
-            {
-                _internalArray = new string[size];
-            }
-
-            public BookCollection()
-            {
-                _internalArray = new string[10];
-                _currentIndex = 0;
-            }
-
-
-            public void Add(string book)
-            {
-                if (_currentIndex != _internalArray.Length)
-                {
-                    _internalArray[_currentIndex++] = book;
-                }
-                else
-                {
-                    var tmpArray = new string[_internalArray.Length * 2];
-                    Array.Copy(_internalArray, tmpArray, 10);
-                    _internalArray = tmpArray;
-                    _internalArray[_currentIndex++] = book;
-                }
-            }
-
-            public IEnumerator<int> GetEnumerator()
-            {
-                int sum = 0;
-                for (int i = 0; i < _internalArray.Length; i++)
-                {
-                    sum += i;
-                }
-                yield return sum;
-            }
-
-
-
-            IEnumerator IEnumerable.GetEnumerator()
-            {
-                throw new NotImplementedException();
-            }
-
-
-            public IEnumerable<string> GetElements()
-            {
-                throw new NotImplementedException();
-            }
-
-            IEnumerator<string> IEnumerable<string>.GetEnumerator()
-            {
-                throw new NotImplementedException();
-            }
-        }
-        #endregion
+       
     }
 }

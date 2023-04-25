@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pbl0rPq2HBNOhLwW52AzljvE8hjY1UwCm05zRhV1W9TYXYaR9O5+oWZ86IxjyQ1Xsm+UKx72gCVe0a7nVkUBjA==",
+  "dgSpecHash": "xqwjyjsqeGEApLOS8aw8xc7H+bJs8/sVpgnqVi/njBM+uOQdL1mv/+l400tW3aMoklo7aeTK/Uq3nw+LzSVhYQ==",
   "success": true,
-  "projectFilePath": "D:\\C#\\LABS\\Lab23_Aksana.Patrubeika_ORM\\Lab23_Aksana.Patrubeika_ORM\\Lab23_Aksana.Patrubeika_ORM.csproj",
+  "projectFilePath": "D:\\C#\\LABS\\TMS_2022-2023\\Lab23_Aksana.Patrubeika_ORM\\Lab23_Aksana.Patrubeika_ORM\\Lab23_Aksana.Patrubeika_ORM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tom\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Tom\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
