@@ -1,0 +1,13 @@
+﻿@model Diplom_Game.Steam_Aksana.Patrubeika.ViewModel.SteamCartViewModel
+
+<div class="container">
+	@foreach (var item in Model.CartItem.listShopItems)
+	{
+			<div class="alert alert-warning mt-3">
+				<b>Game:</b> @item.Game.GameName <br />
+				<b>Price:</b> @item.Price
+			</div>
+	}
+	<hr />	
+	<a class="btn btn-primary" asp-controller="Order" asp-action="Checkout">Place an order</a>		
+</div>

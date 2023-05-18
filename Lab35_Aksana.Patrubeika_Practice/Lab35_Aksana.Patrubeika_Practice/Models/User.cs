@@ -7,6 +7,7 @@ namespace Lab35_Aksana.Patrubeika_Practice.Models
 {
     public class User : IdentityUser
     {       
+        public string Role { get; set; }
 
         public virtual ICollection<Order> Orders { get; } = new List<Order>();
     }

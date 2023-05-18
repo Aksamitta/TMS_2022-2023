@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Diplom_Game.Steam_Aksana.Patrubeika.props" />
+</Project>

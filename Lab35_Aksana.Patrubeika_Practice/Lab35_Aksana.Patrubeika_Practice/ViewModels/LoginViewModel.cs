@@ -11,7 +11,6 @@ namespace Lab35_Aksana.Patrubeika_Practice.ViewModels
 
         [Required]
         [DataType(DataType.Password)]
-        [Display(Name = "Пароль")]
         public string Password { get; set; }
 
         [Display(Name = "Remember?")]

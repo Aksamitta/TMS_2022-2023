@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Diplom_Game.Steam_Aksana.Patrubeika.Models.User>
+@{
+    ViewBag.Title = "List of Users";
+}
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+<table class="table"> 
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Level</th>
+        <th>Country</th>
+        <th></th>
+    </tr>
+        @foreach (var item in Model)
+        {
+                          <tr> 
+                                  <td>
+                    @Html.DisplayFor(modelItem => item.SteamName)
+                                  </td>
+                              <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                              </td>
+                               <td>
+                    @Html.DisplayFor(modelItem => item.UserLevel.LevelName)
+                               </td>
+                               <td>
+                    @Html.DisplayFor(modelItem => item.Country)
+                               </td>
+                               <td>
+                                        <a asp-action="DeleteUser" asp-route-Id="@item.Id">Delete</a> |
+                                        <a asp-action="EditUser" asp-route-Id="@item.Id">Edit</a>
+
+                               </td>
+
+
+                          </tr>
+        } 
+</table>
+</body>
+
+

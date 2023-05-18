@@ -1,0 +1,29 @@
+﻿@model Diplom_Game.Steam_Aksana.Patrubeika.ViewModel.EditUserViewModel
+@{
+    ViewBag.Title = "Edding User";
+}
+<form asp-action="EditUser" asp-controller="Admin">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <input type="hidden" asp-for="Id" />
+    </div>   
+    <div class="form-group">
+        <label asp-for="SteamName" class="control-label">SteamName</label>
+        <input type="text" asp-for="SteamName" class="form-control" />
+    </div> 
+    <div class="form-group">
+        <label asp-for="Email" class="control-label">Email</label>
+        <input type="text" asp-for="Email" class="form-control" />
+    </div>    
+    <div class="form-group">
+        <label asp-for="Country" class="control-label">Country</label>
+        <input type="text" asp-for="Country" class="form-control" />
+    </div> 
+    <div class="form-group">
+        <label asp-for="UserLevelId" class="control-label">User Level</label>
+        <select asp-for="UserLevelId" class="form-control" asp-items="ViewBag.LevelName"></select>
+    </div> 
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-outline-secondary" />
+    </div>
+</form>

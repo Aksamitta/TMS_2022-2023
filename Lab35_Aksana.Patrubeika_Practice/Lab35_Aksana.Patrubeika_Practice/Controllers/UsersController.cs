@@ -16,6 +16,7 @@ namespace Lab35_Aksana.Patrubeika_Practice.Controllers
 
         public IActionResult Index() => View(_userManager.Users.ToList());
 
+
         public IActionResult Create() => View();
 
         [HttpPost]

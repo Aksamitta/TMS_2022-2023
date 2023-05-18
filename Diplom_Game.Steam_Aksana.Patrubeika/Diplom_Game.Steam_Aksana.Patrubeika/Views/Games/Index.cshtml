@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Diplom_Game.Steam_Aksana.Patrubeika.Models.Game>
+@using Microsoft.AspNetCore.Identity
+
+@{
+    ViewBag.Title = "List of Users";
+}
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+<p>
+        @if (User.IsInRole("admin"))
+        {
+               <a asp-controller="Admin" asp-action="CreateGame">Create New</a> 
+        }
+        
+</p>
+<table class="table"> 
+    <tr>
+        <th>#</th>
+        <th>Name of Game</th>
+        <th>Genre</th>
+        <th>Review</th>
+        <th>Price</th>
+        <th>Developer</th>
+        <th></th>
+    </tr>
+        @foreach (var item in Model)
+        {
+                      <tr> 
+                              <td>
+                    @Html.DisplayFor(modelItem => item.GameId)
+                              </td>
+                          <td>
+                    @Html.DisplayFor(modelItem => item.GameName)
+                          </td>
+                           <td>
+                    @Html.DisplayFor(modelItem => item.Genre)
+                           </td>                          
+                           <td>
+                    @Html.DisplayFor(modelItem => item.Reviews)
+                           </td>
+                           <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                           </td>
+                               <td>
+                    @Html.DisplayFor(modelItem => item.Developer.DeveloperName)
+                               </td>
+                           <td>
+                    @if (User.IsInRole("admin"))
+                    {
+                                <a asp-controller="Games" asp-action="Delete" asp-route-Id="@item.GameId">Delete</a> 
+                        <a asp-controller="Games" asp-action="Edit" asp-route-Id="@item.GameId">Edit</a>
+
+                    }
+                    else
+                    {
+                                <a asp-controller="Cart" asp-action="addToCart" asp-route-Id="@item.GameId">Add to Cart</a>
+                    }
+                    
+                           </td> 
+                      </tr>
+        } 
+</table>
+</body>

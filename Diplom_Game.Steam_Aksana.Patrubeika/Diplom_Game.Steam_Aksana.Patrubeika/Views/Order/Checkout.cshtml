@@ -1,0 +1,42 @@
+﻿@model Diplom_Game.Steam_Aksana.Patrubeika.Models.Order
+
+@{
+    ViewBag.Title = "Game Store: Order Form";
+}
+
+<h2>Place an order now</h2>
+<p>Please enter your payment card details!</p>
+
+<form asp-action="Checkout" method="post" class="form-horizontal">
+<div class="form-group">    
+    <div class="col-8">             
+        <label asp-for="FirstName" class="control-label"></label>
+        <input asp-for="FirstName" class="form-control" />
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+    </div>
+    <div class="col-8">             
+        <label asp-for="SecondName" class="control-label"></label>
+        <input asp-for="SecondName" class="form-control" />
+        <span asp-validation-for="SecondName" class="text-danger"></span>
+    </div>
+     <div class="col-8">             
+        <label asp-for="CreditCartNumber" class="control-label"></label>
+        <input asp-for="CreditCartNumber" class="form-control" />
+        <span asp-validation-for="CreditCartNumber" class="text-danger"></span>
+    </div>
+    <div class="col-8">             
+        <label asp-for="CreditCartDate" class="control-label"></label>
+        <input asp-for="CreditCartDate" class="form-control" />
+        <span asp-validation-for="CreditCartDate" class="text-danger"></span>
+    </div>
+    <div class="col-8">             
+        <label asp-for="CreditCartCode" class="control-label"></label>
+        <input asp-for="CreditCartCode" class="form-control" />
+        <span asp-validation-for="CreditCartCode" class="text-danger"></span>
+    </div>
+            
+    <div class="form-group">
+        <input type="submit" value="Buy" class="btn btn-primary" />
+    </div>
+</form>
+        

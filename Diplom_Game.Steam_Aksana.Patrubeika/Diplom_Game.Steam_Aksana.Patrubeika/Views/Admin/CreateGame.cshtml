@@ -1,0 +1,59 @@
+﻿@model Diplom_Game.Steam_Aksana.Patrubeika.Models.Game
+
+@{
+    ViewData["Title"] = "Add Game"; 
+}
+
+<form asp-controller="Admin" asp-action="CreateGame" method="post">
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+             <form asp-action="CreateGame">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="GameName" class="control-label"></label>
+                <input asp-for="GameName" class="form-control" />
+                <span asp-validation-for="GameName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DeveloperId" class="control-label">Developer Name</label>
+                <select asp-for="DeveloperId" class ="form-control" asp-items="ViewBag.DeveloperName"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReleaseDate" class="control-label"></label>
+                <input asp-for="ReleaseDate" class="form-control" />
+                <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reviews" class="control-label"></label>
+                <input asp-for="Reviews" class="form-control" />
+                <span asp-validation-for="Reviews" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Genre" class="control-label"></label>
+                <input asp-for="Genre" class="form-control" />
+                <span asp-validation-for="Genre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Summary" class="control-label"></label>
+                <input asp-for="Summary" class="form-control" />
+                <span asp-validation-for="Summary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+</form>
+
+<div>
+    <a asp-controller="Games" asp-action="Index">Back to List</a>
+</div>
+
