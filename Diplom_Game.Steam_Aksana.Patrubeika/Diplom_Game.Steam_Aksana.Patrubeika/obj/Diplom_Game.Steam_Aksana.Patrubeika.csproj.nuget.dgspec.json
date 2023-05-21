@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\LABS\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika.csproj": {}
+    "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika.csproj": {}
   },
   "projects": {
-    "D:\\C#\\LABS\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika.csproj": {
+    "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\LABS\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika.csproj",
+        "projectUniqueName": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika.csproj",
         "projectName": "Diplom_Game.Steam_Aksana.Patrubeika",
-        "projectPath": "D:\\C#\\LABS\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika.csproj",
+        "projectPath": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika.csproj",
         "packagesPath": "C:\\Users\\Tom\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\LABS\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\obj\\",
+        "outputPath": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

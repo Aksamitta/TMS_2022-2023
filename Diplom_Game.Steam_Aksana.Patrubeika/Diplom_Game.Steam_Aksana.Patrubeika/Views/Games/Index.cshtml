@@ -1,5 +1,6 @@
 ﻿@model IEnumerable<Diplom_Game.Steam_Aksana.Patrubeika.Models.Game>
 @using Microsoft.AspNetCore.Identity
+@inject SignInManager<User> SignInManager
 
 @{
     ViewBag.Title = "List of Users";
@@ -17,51 +18,35 @@
         }
         
 </p>
-<table class="table"> 
-    <tr>
-        <th>#</th>
-        <th>Name of Game</th>
-        <th>Genre</th>
-        <th>Review</th>
-        <th>Price</th>
-        <th>Developer</th>
-        <th></th>
-    </tr>
-        @foreach (var item in Model)
-        {
-                      <tr> 
-                              <td>
-                    @Html.DisplayFor(modelItem => item.GameId)
-                              </td>
-                          <td>
-                    @Html.DisplayFor(modelItem => item.GameName)
-                          </td>
-                           <td>
-                    @Html.DisplayFor(modelItem => item.Genre)
-                           </td>                          
-                           <td>
-                    @Html.DisplayFor(modelItem => item.Reviews)
-                           </td>
-                           <td>
-                    @Html.DisplayFor(modelItem => item.Price)
-                           </td>
-                               <td>
-                    @Html.DisplayFor(modelItem => item.Developer.DeveloperName)
-                               </td>
-                           <td>
-                    @if (User.IsInRole("admin"))
-                    {
-                                <a asp-controller="Games" asp-action="Delete" asp-route-Id="@item.GameId">Delete</a> 
-                        <a asp-controller="Games" asp-action="Edit" asp-route-Id="@item.GameId">Edit</a>
 
-                    }
-                    else
-                    {
-                                <a asp-controller="Cart" asp-action="addToCart" asp-route-Id="@item.GameId">Add to Cart</a>
-                    }
-                    
-                           </td> 
-                      </tr>
-        } 
-</table>
+<div class="row mt-5 mb-2 ">
+        @{
+            foreach (var game in Model)
+            {             
+                <div class="col-lg-3">
+                    <img class="img-thumbnail" src="@game.Img" alt="@game.GameName"></img>
+                    <h2>@game.GameName</h2>
+                    <p>Genre: @game.Genre</p>
+                    <p>Reviews: @game.Reviews</p>
+                    <p>Developer: @game.Developer.DeveloperName</p>
+                    <p>Price: @game.Price $</p>
+                    <p><a class="btn btn-warning" asp-controller="Games" asp-action="Details" asp-route-Id="@game.GameId">Details</a>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            if (User.IsInRole("admin"))
+                            {
+                                <a class="btn btn-info" asp-controller="Admin" asp-action="EditGame" asp-route-Id="@game.GameId">Edit</a>
+                                <a class="btn btn-danger" asp-controller="Games" asp-action="Delete" asp-route-Id="@game.GameId">Delete</a>                                 
+                            }
+                            else
+                            {  
+                                <a class="btn btn-warning" asp-controller="Cart" asp-action="addToCart" asp-route-Id="@game.GameId">Add to Cart</a>
+                            }
+                        }
+                    </p>
+                </div>
+            }
+        }
+</div>
+
 </body>

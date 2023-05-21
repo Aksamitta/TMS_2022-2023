@@ -88,6 +88,12 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Img")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImgPath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
@@ -99,7 +105,6 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Summary")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("GameId");
@@ -115,6 +120,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Migrations
                             DeveloperId = 3,
                             GameName = "INSIDE",
                             Genre = "Platformer",
+                            Img = "/img/INSIDE.jpg",
                             Price = 10.49,
                             ReleaseDate = new DateTime(2016, 7, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Reviews = "Overwhelmingly Positive",
@@ -126,6 +132,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Migrations
                             DeveloperId = 3,
                             GameName = "LIMBO",
                             Genre = "Platformer",
+                            Img = "/img/LIMBO.jpg",
                             Price = 6.29,
                             ReleaseDate = new DateTime(2011, 8, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Reviews = "Very Positive",
@@ -137,6 +144,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Migrations
                             DeveloperId = 2,
                             GameName = "Detroit: Become Human",
                             Genre = "Adventure",
+                            Img = "/img/DETROIT.jpg",
                             Price = 19.989999999999998,
                             ReleaseDate = new DateTime(2020, 6, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Reviews = "Overwhelmingly Positive",
@@ -148,6 +156,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Migrations
                             DeveloperId = 4,
                             GameName = "Stray",
                             Genre = "Adventure",
+                            Img = "/img/STRAY.png",
                             Price = 15.99,
                             ReleaseDate = new DateTime(2022, 7, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Reviews = "Overwhelmingly Positive",
@@ -159,6 +168,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Migrations
                             DeveloperId = 1,
                             GameName = "Gris",
                             Genre = "Adventure",
+                            Img = "/img/Gris.jpg",
                             Price = 9.4900000000000002,
                             ReleaseDate = new DateTime(2018, 12, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Reviews = "Overwhelmingly Positive",

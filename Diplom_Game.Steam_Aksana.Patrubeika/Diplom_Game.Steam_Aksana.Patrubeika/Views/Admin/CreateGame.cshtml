@@ -1,19 +1,21 @@
 ﻿@model Diplom_Game.Steam_Aksana.Patrubeika.Models.Game
 
-@{
-    ViewData["Title"] = "Add Game"; 
-}
 
-<form asp-controller="Admin" asp-action="CreateGame" method="post">
+<form asp-controller="Admin" asp-action="CreateGame" method="post" enctype="multipart/form-data">
 <div class="container">
     <div class="row">
         <div class="col-8">
-             <form asp-action="CreateGame">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+             <form asp-action="CreateGame" >
+            <div asp-validation-summary="All" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="GameName" class="control-label"></label>
                 <input asp-for="GameName" class="form-control" />
                 <span asp-validation-for="GameName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Img" class="control-label"></label>
+                <input asp-for="Img" type="file" class="form-control" name="uploadedFile" />
+                <span asp-validation-for="Img" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="DeveloperId" class="control-label">Developer Name</label>

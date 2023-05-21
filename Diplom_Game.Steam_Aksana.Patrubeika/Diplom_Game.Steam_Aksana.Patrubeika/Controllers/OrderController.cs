@@ -32,7 +32,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
 			
 			if (_steamCart.listShopItems.Count() == 0)
 			{
-				ModelState.AddModelError("", "Извините, ваша корзина пуста!");
+				ModelState.AddModelError("", "Your cart is empty!");
 			}
 
 			//не работает нормально

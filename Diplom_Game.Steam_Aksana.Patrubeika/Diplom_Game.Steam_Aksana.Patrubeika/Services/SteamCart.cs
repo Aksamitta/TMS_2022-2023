@@ -19,6 +19,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Services
             _context = context;
         }
 
+       
         public static SteamCart GetCart(IServiceProvider services)
         {
             //создаем новую сессию
@@ -40,6 +41,13 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Services
                 Game = game,
                 Price = game.Price
             });
+            _context.SaveChanges();
+        }
+
+        public void DeleteFromCart(int id)
+        {
+           var cart = _context.SteamCartItems.FirstOrDefault(x => x.ItemId == id);
+            _context.SteamCartItems.Remove(cart);
             _context.SaveChanges();
         }
 

@@ -54,11 +54,11 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
 
         public async Task<IActionResult> Edit(string userId)
         {
-            // получаем пользователя
+            // get the user
             User user = await _userManager.FindByIdAsync(userId);
             if (user != null)
             {
-                // получем список ролей пользователя
+                // get list the user's roles
                 var userRoles = await _userManager.GetRolesAsync(user);
                 var allRoles = _roleManager.Roles.ToList();
                 ChangeRoleViewModel model = new ChangeRoleViewModel
@@ -77,17 +77,17 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(string userId, List<string> roles)
         {
-            // получаем пользователя
+            // get user
             User user = await _userManager.FindByIdAsync(userId);
             if (user != null)
             {
-                // получем список ролей пользователя
+                // get list of user's roles
                 var userRoles = await _userManager.GetRolesAsync(user);
                 // получаем все роли
                 var allRoles = _roleManager.Roles.ToList();
-                // получаем список ролей, которые были добавлены
+                // get list roles that were added
                 var addedRoles = roles.Except(userRoles);
-                // получаем роли, которые были удалены
+                // get roles, that were deleted
                 var removedRoles = userRoles.Except(roles);
 
                 await _userManager.AddToRolesAsync(user, addedRoles);

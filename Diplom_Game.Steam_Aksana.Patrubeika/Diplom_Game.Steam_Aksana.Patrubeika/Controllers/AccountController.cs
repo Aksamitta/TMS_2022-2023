@@ -27,11 +27,11 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
             if (ModelState.IsValid)
             {
                 User user = new User { Email = model.Email, UserName = model.Email, Country = model.Country, SteamName = model.SteamName};
-                // добавляем пользователя
+                // add user
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    // установка куки
+                    // coocies
                     await _signInManager.SignInAsync(user, false);
                     return RedirectToAction("Index", "Home");
                 }
@@ -61,8 +61,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
                 var result =
                     await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
                 if (result.Succeeded)
-                {
-                    // проверяем, принадлежит ли URL приложению
+                {                    
                     if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
                     {
                         return Redirect(model.ReturnUrl);
@@ -84,7 +83,6 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {
-            // удаляем аутентификационные куки
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
 

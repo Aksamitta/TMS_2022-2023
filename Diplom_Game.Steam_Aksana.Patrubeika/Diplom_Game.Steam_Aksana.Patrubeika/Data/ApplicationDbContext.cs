@@ -1,4 +1,5 @@
-﻿using Diplom_Game.Steam_Aksana.Patrubeika.Models;
+﻿using Diplom_Game.Steam_Aksana.Patrubeika.Migrations;
+using Diplom_Game.Steam_Aksana.Patrubeika.Models;
 using Diplom_Game.Steam_Aksana.Patrubeika.Services;
 using Diplom_Game.Steam_Aksana.Patrubeika.ViewModel;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -48,8 +49,9 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Data
            builder.Entity<Game>().HasData(
                 new Game() 
                 { 
-                    GameId = 1, 
+                    GameId = 1,                    
                     GameName = "INSIDE", DeveloperId = 3, 
+                    Img = "/img/INSIDE.jpg",
                     ReleaseDate = new DateTime(2016, 07, 07), 
                     Summary = "Hunted and alone, a boy finds himself drawn into the center of a dark project. INSIDE is a dark, narrative-driven platformer combining intense action with challenging puzzles. It has been critically acclaimed for its moody art style, ambient soundtrack and unsettling atmosphere.",
                     Genre = "Platformer", 
@@ -59,6 +61,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Data
                 {
                     GameId = 2,
                     GameName = "LIMBO",
+                    Img = "/img/LIMBO.jpg",
                     DeveloperId = 3,
                     ReleaseDate = new DateTime(2011, 08, 02),
                     Summary = "Uncertain of his sister's fate, a boy enters LIMBO",
@@ -69,6 +72,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Data
                 {
                     GameId = 3,
                     GameName = "Detroit: Become Human",
+                    Img = "/img/DETROIT.jpg",
                     DeveloperId = 2,
                     ReleaseDate = new DateTime(2020, 06, 18),
                     Summary = "Detroit: Become Human puts the destiny of both mankind and androids in your hands, taking you to a near future where machines have become more intelligent than humans. Every choice you make affects the outcome of the game, with one of the most intricately branching narratives ever created.",
@@ -79,6 +83,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Data
                 {
                     GameId = 4,
                     GameName = "Stray",
+                    Img = "/img/STRAY.png",
                     DeveloperId = 4,
                     ReleaseDate = new DateTime(2022, 07, 19),
                     Summary = "Lost, alone and separated from family, a stray cat must untangle an ancient mystery to escape a long-forgotten cybercity and find their way home.",
@@ -89,6 +94,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Data
                 {
                     GameId = 5,
                     GameName = "Gris",
+                    Img = "/img/Gris.jpg",
                     DeveloperId = 1,
                     ReleaseDate = new DateTime(2018, 12, 13),
                     Summary = "Gris is a hopeful young girl lost in her own world, dealing with a painful experience in her life. Her journey through sorrow is manifested in her dress, which grants new abilities to better navigate her faded reality.",

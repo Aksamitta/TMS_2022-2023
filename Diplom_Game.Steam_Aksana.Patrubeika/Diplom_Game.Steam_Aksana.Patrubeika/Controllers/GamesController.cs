@@ -44,69 +44,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
             }
 
             return View(game);
-        }
-
-        //// GET: Games/Create
-        //public IActionResult Create()
-        //{
-        //    ViewData["DeveloperId"] = new SelectList(_context.Developers, "DeveloperId", "DeveloperId");
-        //    return View();
-        //}
-
-       
-
-        // GET: Games/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null || _context.Games == null)
-            {
-                return NotFound();
-            }
-
-            var game = await _context.Games.FindAsync(id);
-            if (game == null)
-            {
-                return NotFound();
-            }
-            ViewData["DeveloperId"] = new SelectList(_context.Developers, "DeveloperId", "DeveloperId", game.DeveloperId);
-            return View(game);
-        }
-
-        // POST: Games/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("GameId,GameName,DeveloperId,ReleaseDate,Reviews,Genre,Summary,Price")] Game game)
-        {
-            if (id != game.GameId)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(game);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!GameExists(game.GameId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["DeveloperId"] = new SelectList(_context.Developers, "DeveloperId", "DeveloperId", game.DeveloperId);
-            return View(game);
-        }
+        } 
 
         // GET: Games/Delete/5
         public async Task<IActionResult> Delete(int? id)

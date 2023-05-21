@@ -1,33 +1,34 @@
 ﻿@model Diplom_Game.Steam_Aksana.Patrubeika.ViewModel.RegisterViewModel
-<h2>Регистрация нового пользователя</h2>
+
+<h4>Registration</h4>
 <form method="post" asp-controller="Account" asp-action="Register">
-    <div asp-validation-summary="ModelOnly"></div>
-     <div>
-        <label asp-for="SteamName"></label><br />
-        <input asp-for="SteamName" />
-        <span asp-validation-for="SteamName"></span>
-    </div>  
-    <div>
-        <label asp-for="Email"></label><br />
-        <input asp-for="Email" />
+    <div asp-validation-summary="ModelOnly" ></div>
+     <div class="col-md-3 control-label">
+        <label asp-for="SteamName">Come up your Steam Name</label><br />
+        <input asp-for="SteamName" class="form-control" />
+        <span asp-validation-for="SteamName" ></span>
+    </div>      
+    <div class="col-md-3 control-label">
+        <label asp-for="Email">Email</label><br />
+        <input asp-for="Email" class="form-control"/>
         <span asp-validation-for="Email"></span>
     </div>  
-    <div>
-        <label asp-for="Password"></label><br />
-        <input asp-for="Password" />
+    <div class="col-md-3 control-label">
+        <label asp-for="Password">Password</label><br />
+        <input asp-for="Password" class="form-control"/>
         <span asp-validation-for="Password"></span>
     </div>
-    <div>
-        <label asp-for="PasswordConfirm"></label><br />
-        <input asp-for="PasswordConfirm" />
+    <div class="col-md-3 control-label">
+        <label asp-for="PasswordConfirm">Confirm Password</label><br />
+        <input asp-for="PasswordConfirm" class="form-control"/>
         <span asp-validation-for="PasswordConfirm"></span>
     </div>
-     <div>
-        <label asp-for="Country"></label><br />
-        <input asp-for="Country" />
+     <div class="col-md-3 control-label">
+        <label asp-for="Country">Country</label><br />
+        <input asp-for="Country" class="form-control"/>
         <span asp-validation-for="Country"></span>
     </div>
     <div>
-        <input type="submit" value="Register" />
+        <input type="submit" class="btn btn-primary" value="Register" />
     </div>
 </form>

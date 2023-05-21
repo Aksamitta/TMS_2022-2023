@@ -6,8 +6,10 @@
 			<div class="alert alert-warning mt-3">
 				<b>Game:</b> @item.Game.GameName <br />
 				<b>Price:</b> @item.Price
+				<b><a type="button" class="btn btn-info" asp-controller="Games" asp-action="Details" asp-route-Id="@item.Game.GameId">Game details</a></b>
+				<b><a type="button" class="btn btn-info" asp-controller="Cart" asp-action="DeleteItem" asp-route-Id="@item.ItemId">Delete from Cart</a></b>
 			</div>
 	}
 	<hr />	
-	<a class="btn btn-primary" asp-controller="Order" asp-action="Checkout">Place an order</a>		
+	<a class="btn btn-primary" asp-controller="Order" asp-action="Checkout">Place the order</a>		
 </div>
