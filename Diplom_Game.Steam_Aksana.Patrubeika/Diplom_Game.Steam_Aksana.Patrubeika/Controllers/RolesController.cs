@@ -70,7 +70,6 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
                 };
                 return View(model);
             }
-
             return NotFound();
         }
 
@@ -96,7 +95,6 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
 
                 return RedirectToAction("UserList");
             }
-
             return NotFound();
         }
     }

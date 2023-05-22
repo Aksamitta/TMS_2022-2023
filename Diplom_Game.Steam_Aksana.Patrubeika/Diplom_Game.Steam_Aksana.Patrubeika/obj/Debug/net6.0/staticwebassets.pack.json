@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\img\\2850fa6dab794ffe714283f2bcc24f35.jpg",
+      "PackagePath": "staticwebassets\\img\\2850fa6dab794ffe714283f2bcc24f35.jpg"
+    },
+    {
       "Id": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\img\\DETROIT.jpg",
       "PackagePath": "staticwebassets\\img\\DETROIT.jpg"
     },
@@ -31,6 +35,10 @@
     {
       "Id": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\img\\JOURNEY.jpg",
       "PackagePath": "staticwebassets\\img\\JOURNEY.jpg"
+    },
+    {
+      "Id": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\img\\King Arthur.jpg",
+      "PackagePath": "staticwebassets\\img\\King Arthur.jpg"
     },
     {
       "Id": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\img\\LIMBO.jpg",
@@ -271,6 +279,10 @@
     {
       "Id": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\user\\1628631981_113-p-smeshnie-foto-koshek-124.jpg",
+      "PackagePath": "staticwebassets\\user\\1628631981_113-p-smeshnie-foto-koshek-124.jpg"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Diplom_Game.Steam_Aksana.Patrubeika.Microsoft.AspNetCore.StaticWebAssets.props",

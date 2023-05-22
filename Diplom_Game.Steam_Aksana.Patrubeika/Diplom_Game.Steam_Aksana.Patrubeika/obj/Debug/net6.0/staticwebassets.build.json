@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/cfH6N/3PS3T+v084YT0jz1LE4cCTAhq/Y327xxzTtk=",
+  "Hash": "6KK4GMBL+bLQJS5KxJl983mSRnzBLvwDbFXHNmvg6bE=",
   "Source": "Diplom_Game.Steam_Aksana.Patrubeika",
   "BasePath": "_content/Diplom_Game.Steam_Aksana.Patrubeika",
   "Mode": "Default",
@@ -1105,6 +1105,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\img\\2850fa6dab794ffe714283f2bcc24f35.jpg",
+      "SourceId": "Diplom_Game.Steam_Aksana.Patrubeika",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\",
+      "BasePath": "_content/Diplom_Game.Steam_Aksana.Patrubeika",
+      "RelativePath": "img/2850fa6dab794ffe714283f2bcc24f35.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\2850fa6dab794ffe714283f2bcc24f35.jpg"
+    },
+    {
       "Identity": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\img\\DETROIT.jpg",
       "SourceId": "Diplom_Game.Steam_Aksana.Patrubeika",
       "SourceType": "Discovered",
@@ -1188,6 +1205,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\JOURNEY.jpg"
+    },
+    {
+      "Identity": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\img\\King Arthur.jpg",
+      "SourceId": "Diplom_Game.Steam_Aksana.Patrubeika",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\",
+      "BasePath": "_content/Diplom_Game.Steam_Aksana.Patrubeika",
+      "RelativePath": "img/King Arthur.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\King Arthur.jpg"
     },
     {
       "Identity": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\img\\LIMBO.jpg",
@@ -2208,6 +2242,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\user\\1628631981_113-p-smeshnie-foto-koshek-124.jpg",
+      "SourceId": "Diplom_Game.Steam_Aksana.Patrubeika",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\",
+      "BasePath": "_content/Diplom_Game.Steam_Aksana.Patrubeika",
+      "RelativePath": "user/1628631981_113-p-smeshnie-foto-koshek-124.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user\\1628631981_113-p-smeshnie-foto-koshek-124.jpg"
     }
   ]
 }

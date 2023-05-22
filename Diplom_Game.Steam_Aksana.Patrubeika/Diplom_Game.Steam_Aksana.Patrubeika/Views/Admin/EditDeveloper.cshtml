@@ -1,0 +1,24 @@
+﻿@model Diplom_Game.Steam_Aksana.Patrubeika.Models.Developer
+
+@{
+    ViewBag.Title = "Edding Developer";
+}
+
+<form asp-action="EditDeveloper" asp-controller="Admin" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <input type="hidden" asp-for="DeveloperId" />
+    </div>   
+    <div class="form-group">
+        <label asp-for="DeveloperName" class="control-label">Developer Name</label>
+        <input type="text" asp-for="DeveloperName" class="form-control" />
+    </div>    
+    <div class="mb-3">
+        <label asp-for="DeveloperSummary" class="form-label">Summary</label>        
+        <input type="text" asp-for="DeveloperSummary" class="form-control"/>        
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-outline-secondary" />
+    </div>
+</form>
+

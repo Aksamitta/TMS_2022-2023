@@ -1,0 +1,30 @@
+﻿@model Diplom_Game.Steam_Aksana.Patrubeika.Models.Developer
+
+<form asp-controller="Admin" asp-action="CreateDeveloper" method="post" >
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+             <form asp-action="CreateDeveloper" >
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DeveloperName" class="control-label"></label>
+                <input asp-for="DeveloperName" class="form-control" />
+                <span asp-validation-for="DeveloperName" class="text-danger"></span>
+            </div>           
+            <div class="form-group">
+                <label asp-for="DeveloperSummary" class="control-label"></label>
+                <input asp-for="DeveloperSummary" class="form-control" />
+                <span asp-validation-for="DeveloperSummary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="CreateDeveloper" class="btn btn-primary" />
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+</form>
+
+<div>
+    <a asp-controller="Developer" asp-action="Index">Back to List</a>
+</div>

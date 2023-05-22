@@ -5,37 +5,20 @@
 <h2>@ViewBag.Title</h2>
 <hr />
 
-<div class="panel-group">
-    <div class="panel panel-info">
-        <div class="panel-heading">My Profile</div>
-        <div class="panel-body">
-            @using (Html.BeginForm("", "", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-horizontal" }))
-            {
-                    <div class="form-group">
-                    @Html.LabelFor(item => item.Email, new { @class = "col-sm-2 control-label" })
-                        <div class="col-sm-10">
-                        @Html.TextBoxFor(item => item.Email, new { @class = "form-control", @placeholder = "Customer Name", disabled = "true" })
-                        </div>
-                    </div>
-                    <div class="form-group">
-                    @Html.LabelFor(item => item.SteamName, new { @class = "col-sm-2 control-label" })
-                        <div class="col-sm-10">
-                        @Html.TextBoxFor(item => item.SteamName, new { @class = "form-control", @placeholder = "Confirmation Number", disabled = "true" })
-                        </div>
-                    </div>
-                    <div class="form-group">
-                    @Html.LabelFor(item => item.UserLevel, new { @class = "col-sm-2 control-label" })
-                        <div class="col-sm-10">
-                        @Html.TextBoxFor(item => item.UserLevel, new { @class = "form-control", @placeholder = "Level", disabled = "true" })
-                        </div>
-                    </div>
-                    <div class="form-group">
-                    @Html.LabelFor(item => item.Country, new { @class = "col-sm-2 control-label" })
-                        <div class="col-sm-10">
-                        @Html.TextBoxFor(item => item.Country, new { @class = "form-control", @placeholder = "Delivery Date", disabled = "true" })
-                        </div>
-                    </div>
-            }
-        </div>
+<div class="card" style="width: 50rem;">
+    <img src="@Model.Img" class="rounded mx-auto d-block" alt="@Model.SteamName">
+    <div class="card-body">
+        <h5 class="card-title">@Model.SteamName</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Email:</strong> @Model.Email</li>
+        <li class="list-group-item"><strong>Level:</strong> @Model.UserLevel</li>
+        <li class="list-group-item"><strong>Country:</strong> @Model.Country</li>
+    </ul>
+    <div class="card-body">   
+        <a class="btn btn-link" asp-controller="User" asp-action="EditProfile" >Edit Profile</a>|
+        <a class="btn btn-link" asp-controller="Games" asp-action="Index" >Back to Games</a>
+
     </div>
 </div>
+

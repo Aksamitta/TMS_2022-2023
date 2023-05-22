@@ -17,6 +17,7 @@
                 <input asp-for="Img" type="file" class="form-control" name="uploadedFile" />
                 <span asp-validation-for="Img" class="text-danger"></span>
             </div>
+            <a class="btn btn-link" asp-controller="Admin" asp-action="CreateDeveloper" >Create Developer</a>
             <div class="form-group">
                 <label asp-for="DeveloperId" class="control-label">Developer Name</label>
                 <select asp-for="DeveloperId" class ="form-control" asp-items="ViewBag.DeveloperName"></select>

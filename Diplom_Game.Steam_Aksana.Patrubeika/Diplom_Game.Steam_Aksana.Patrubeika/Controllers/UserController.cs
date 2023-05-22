@@ -18,25 +18,92 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<User> _userManager;
+        private readonly Microsoft.AspNetCore.Hosting.IHostingEnvironment _hostingEnvironment;
 
-        public UserController(ApplicationDbContext context, UserManager<User> userManager)
+        public UserController(ApplicationDbContext context, UserManager<User> userManager, Microsoft.AspNetCore.Hosting.IHostingEnvironment hostingEnvironment)
         {
             _context = context;
             _userManager = userManager;
+            _hostingEnvironment = hostingEnvironment;
         }
 
         [Authorize]
         public async Task<IActionResult> ViewProfile()
         {
             User user = await _userManager.FindByNameAsync(User.Identity.Name);
-            var userLevel = await _context.Users.Include(lev => lev.UserLevel).FirstOrDefaultAsync(x => x.Id == user.Id);
+            var userLevel = await _context.Users
+                .Include(lev => lev.UserLevel)
+                .FirstOrDefaultAsync(x => x.Id == user.Id);
             ProfileViewModel profileViewModel = new ProfileViewModel
-            { SteamName = user.SteamName, Email = user.Email, Country = user.Country, UserLevel = userLevel.UserLevel.LevelName};
+            { SteamName = user.SteamName,
+                Email = user.Email, 
+                Img = user.Img,
+                Country = user.Country, 
+                UserLevel = userLevel.UserLevel.LevelName};
             
             return View(profileViewModel);
         }
-        
-        
+
+        public async Task<IActionResult> EditProfile()
+        {
+            User user = await _userManager.FindByNameAsync(User.Identity.Name);
+            var userLevel = await _context.Users
+                .Include(lev => lev.UserLevel)
+                .FirstOrDefaultAsync(x => x.Id == user.Id);
+
+            EditUserProfileAccountViewModel userAcc = new EditUserProfileAccountViewModel {
+                Id= user.Id,
+                SteamName= user.SteamName,
+                Age= user.Age,
+                Country= user.Country,
+                UserLevelId = user.UserLevelId,
+                Img = user.Img
+            };
+            ViewData["LevelName"] = new SelectList(_context.UserLevels, "UserLevelId", "LevelName");
+            return View(userAcc);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditProfile(EditUserProfileAccountViewModel model, IFormFile file)
+        {
+            if (ModelState.IsValid)
+            {
+                if (file != null)
+                {
+                    string path = "/user/" + file.FileName;
+                    using (var fileStream = new FileStream(_hostingEnvironment.WebRootPath + path, FileMode.Create))
+                    {
+                        await file.CopyToAsync(fileStream);
+                    }
+                    model.Img = path;
+                }
+                User user = await _userManager.FindByIdAsync(model.Id);
+                if (user != null)
+                {
+                    user.Id= model.Id;
+                    user.SteamName= model.SteamName;
+                    user.Country = model.Country;
+                    user.Img= model.Img;
+                    user.Age = model.Age;
+                    ViewData["LevelName"] = new SelectList(_context.UserLevels, "UserLevelId", "LevelName", user.UserLevelId);
+                    var result = await _userManager.UpdateAsync(user);
+                    if (result.Succeeded)
+                    {
+                        return RedirectToAction("ViewProfile");
+                    }
+                    else
+                    {
+                        foreach (var error in result.Errors)
+                        {
+                            ModelState.AddModelError(string.Empty, error.Description);
+                        }
+                    }
+                }
+            }
+            return View(model);
+        }
+
+
         // GET: User
         public async Task<IActionResult> Index()
         {
@@ -101,7 +168,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         }
 
         // POST: User/Edit/5
-        // Ещже переделать
+        // need to remake
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("UserLevelId,LevelName")] UserLevel userLevel)

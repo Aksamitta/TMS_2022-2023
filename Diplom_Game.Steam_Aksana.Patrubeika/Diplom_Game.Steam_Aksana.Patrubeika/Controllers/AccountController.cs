@@ -26,7 +26,11 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         {
             if (ModelState.IsValid)
             {
-                User user = new User { Email = model.Email, UserName = model.Email, Country = model.Country, SteamName = model.SteamName};
+                User user = new User { 
+                    Email = model.Email, 
+                    UserName = model.Email, 
+                    Country = model.Country, 
+                    SteamName = model.SteamName};
                 // add user
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)

@@ -125,34 +125,31 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         [HttpPost]
         public async Task<IActionResult> EditGame(EditGameViewModel model, IFormFile uploadedFile)
         {
-            if (ModelState.IsValid)
+            if (uploadedFile != null)
             {
-                if (uploadedFile != null)
+                string path = "/img/" + uploadedFile.FileName;
+                using (var fileStream = new FileStream(_hostingEnvironment.WebRootPath + path, FileMode.Create))
                 {
-                    string path = "/img/" + uploadedFile.FileName;
-                    using (var fileStream = new FileStream(_hostingEnvironment.WebRootPath + path, FileMode.Create))
-                    {
-                        await uploadedFile.CopyToAsync(fileStream);
-                    }
-                    model.Img = path;
+                    await uploadedFile.CopyToAsync(fileStream);
                 }
-                Game game = await _context.Games.FindAsync(model.GameId);
-                if (game != null)
-                {
-                    game.GameId = model.GameId;
-                    game.GameName = model.GameName;
-                    game.DeveloperId = model.DeveloperId;
-                    game.Img = model.Img;
-                    game.ReleaseDate = model.ReleaseDate;
-                    game.Reviews = model.Reviews;
-                    game.Genre = model.Genre;
-                    game.Summary = model.Summary;
-                    game.Price = model.Price;
+                model.Img = path;
+            }
+            Game game = await _context.Games.FindAsync(model.GameId);
+            if (game != null)
+            {
+                game.GameId = model.GameId;
+                game.GameName = model.GameName;
+                game.DeveloperId = model.DeveloperId;
+                game.Img = model.Img;
+                game.ReleaseDate = model.ReleaseDate;
+                game.Reviews = model.Reviews;
+                game.Genre = model.Genre;
+                game.Summary = model.Summary;
+                game.Price = model.Price;
 
-                    ViewData["DeveloperName"] = new SelectList(_context.Developers, "DeveloperId", "DeveloperName", game.DeveloperId);
-                    _context.Update(game);
-                    await _context.SaveChangesAsync();
-                }
+                ViewData["DeveloperName"] = new SelectList(_context.Developers, "DeveloperId", "DeveloperName", game.DeveloperId);
+                _context.Update(game);
+                await _context.SaveChangesAsync();
             }
             return RedirectToAction("Index", "Games");
         }
@@ -199,6 +196,121 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
             }
             ViewData["DeveloperName"] = new SelectList(_context.Developers, "DeveloperId", "DeveloperName", game.DeveloperId);
             return View(game);
-        }        
+        }
+
+        // GET: Developers/Create
+        public IActionResult CreateDeveloper()
+        {
+            return View();
+        }
+
+        // POST: Developers/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateDeveloper([Bind("DeveloperId,DeveloperName,DeveloperSummary")] Developer developer)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(developer);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index", "Developer");
+            }
+            return View(developer);
+        }
+
+        // GET: Developers/Delete/5
+        public async Task<IActionResult> DeleteDeveloper(int? id)
+        {
+            if (id == null || _context.Developers == null)
+            {
+                return NotFound();
+            }
+
+            var developer = await _context.Developers
+                .FirstOrDefaultAsync(m => m.DeveloperId == id);
+            if (developer == null)
+            {
+                return NotFound();
+            }
+
+            return View(developer);
+        }
+
+        // POST: Developers/Delete/5
+        [HttpPost, ActionName("DeleteDeveloper")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteDeveloperfirmed(int id)
+        {
+            if (_context.Developers == null)
+            {
+                return Problem("Entity set 'ApplicationDbContext.Developers'  is null.");
+            }
+            var developer = await _context.Developers.FindAsync(id);
+            if (developer != null)
+            {
+                _context.Developers.Remove(developer);
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index", "Developer");
+        }
+        // GET: Developers/Edit/5
+        public async Task<IActionResult> EditDeveloper(int? id)
+        {
+            if (id == null || _context.Developers == null)
+            {
+                return NotFound();
+            }
+
+            var developer = await _context.Developers.FindAsync(id);
+            if (developer == null)
+            {
+                return NotFound();
+            }
+            return View(developer);
+        }
+
+        // POST: Developers/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditDeveloper(int id, [Bind("DeveloperId,DeveloperName,DeveloperSummary")] Developer developer)
+        {
+            if (id != developer.DeveloperId)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(developer);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!DeveloperExists(developer.DeveloperId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction("Index", "Developer");
+            }
+            return View(developer);
+        }
+
+        private bool DeveloperExists(int id)
+        {
+            return (_context.Developers?.Any(e => e.DeveloperId == id)).GetValueOrDefault();
+        }
+        
     }
 }

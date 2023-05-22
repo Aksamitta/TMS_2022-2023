@@ -7,6 +7,8 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.ViewModel
        
         public string SteamName { get; set; }
 
+        public string? Img { get; set; }
+
         public string Email { get; set; }
 
         public int Age { get; set; }

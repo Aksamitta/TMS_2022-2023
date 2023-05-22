@@ -52,12 +52,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/C\#/LABS/TMS_2022-2023/Diplom_Game.Steam_Aksana.Patrubeika/Diplom_Game.Steam_Aksana.Patrubeika/Views/Admin/CreateDeveloper.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlRGV2ZWxvcGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/C\#/LABS/TMS_2022-2023/Diplom_Game.Steam_Aksana.Patrubeika/Diplom_Game.Steam_Aksana.Patrubeika/Views/Admin/CreateGame.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlR2FtZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/C\#/LABS/TMS_2022-2023/Diplom_Game.Steam_Aksana.Patrubeika/Diplom_Game.Steam_Aksana.Patrubeika/Views/Admin/CreateUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Diplom_Game.Steam_Aksana.Patrubeika/Diplom_Game.Steam_Aksana.Patrubeika/Views/Admin/DeleteDeveloper.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlRGV2ZWxvcGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Diplom_Game.Steam_Aksana.Patrubeika/Diplom_Game.Steam_Aksana.Patrubeika/Views/Admin/EditDeveloper.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdERldmVsb3Blci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/C\#/LABS/TMS_2022-2023/Diplom_Game.Steam_Aksana.Patrubeika/Diplom_Game.Steam_Aksana.Patrubeika/Views/Admin/EditGame.cshtml]
@@ -78,6 +90,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/C\#/LABS/TMS_2022-2023/Diplom_Game.Steam_Aksana.Patrubeika/Diplom_Game.Steam_Aksana.Patrubeika/Views/Cart/PlaceOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxQbGFjZU9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Diplom_Game.Steam_Aksana.Patrubeika/Diplom_Game.Steam_Aksana.Patrubeika/Views/Developer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2ZWxvcGVyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Diplom_Game.Steam_Aksana.Patrubeika/Diplom_Game.Steam_Aksana.Patrubeika/Views/Developer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2ZWxvcGVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/C\#/LABS/TMS_2022-2023/Diplom_Game.Steam_Aksana.Patrubeika/Diplom_Game.Steam_Aksana.Patrubeika/Views/Games/Delete.cshtml]
@@ -150,6 +170,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/C\#/LABS/TMS_2022-2023/Diplom_Game.Steam_Aksana.Patrubeika/Diplom_Game.Steam_Aksana.Patrubeika/Views/User/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/LABS/TMS_2022-2023/Diplom_Game.Steam_Aksana.Patrubeika/Diplom_Game.Steam_Aksana.Patrubeika/Views/User/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0UHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/C\#/LABS/TMS_2022-2023/Diplom_Game.Steam_Aksana.Patrubeika/Diplom_Game.Steam_Aksana.Patrubeika/Views/User/Index.cshtml]

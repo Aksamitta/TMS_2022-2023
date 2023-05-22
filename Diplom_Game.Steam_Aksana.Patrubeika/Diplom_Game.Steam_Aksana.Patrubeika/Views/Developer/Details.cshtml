@@ -1,0 +1,29 @@
+﻿@model Diplom_Game.Steam_Aksana.Patrubeika.Models.Developer
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<User> SignInManager
+
+@{ 
+    ViewBag.Title = "Developer Details";
+}
+<h6>@ViewBag.Title</h6>
+<hr />
+
+<div class="card" style="width: 50rem;">    
+    <div class="card-body">
+        <h5 class="card-title">@Model.DeveloperName</h5>
+        <p class="card-text">@Model.DeveloperSummary</p>
+    </div>    
+    <div class="card-body">
+        @if (SignInManager.IsSignedIn(User))
+        {
+            if (User.IsInRole("admin"))
+            {
+                                <a class="btn btn-danger" asp-controller="Admin" asp-action="DeleteDeveloper" asp-route-Id="@Model.DeveloperId">Delete</a> 
+                                <a class="btn btn-info" asp-controller="Admin" asp-action="EditDeveloper" asp-route-Id="@Model.DeveloperId">Edit</a>               
+            }
+        }
+        <a class="btn btn-link" asp-controller="Games" asp-action="Index" >Back to Games</a>
+        <a class="btn btn-link" asp-controller="Developer" asp-action="Index" >Back to Developers</a>
+
+    </div>
+</div>

@@ -9,7 +9,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Models
     {
         public Guid SteamId { get; set; }
 
-        //сделать уникальным
+        //make unique
         public string SteamName { get; set; }
         
         public int? Age { get; set; }
@@ -19,6 +19,8 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Models
         public int? UserLevelId { get; set; }
 
         public int? GameId { get; set; }
+
+        public string? Img { get; set; }
 
         public virtual UserLevel UserLevel { get; set; } = null!;
 
