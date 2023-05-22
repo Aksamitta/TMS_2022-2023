@@ -15,6 +15,8 @@ using System.Drawing;
 using static System.Net.Mime.MediaTypeNames;
 using System.IO;
 using System.Drawing.Drawing2D;
+using System.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
 {
@@ -34,6 +36,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         }
 
         //Users
+        [Authorize(Roles = "admin")]
         public IActionResult Index()
         {
             var users = (from user in _context.Users
@@ -53,6 +56,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
             return View(users);
         }
 
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> EditUser(string id)
         {
             User user = await _userManager.FindByIdAsync(id);
@@ -69,7 +73,9 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
             ViewData["LevelName"] = new SelectList(_context.UserLevels, "UserLevelId", "LevelName");
             return View(model);
         }
+
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> EditUser(EditUserViewModel model)
         {
             if (ModelState.IsValid)
@@ -100,6 +106,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
             return View(model);
         }
 
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> EditGame(int id)
         {
             Game game = await _context.Games.FirstOrDefaultAsync(x => x.GameId == id);
@@ -123,8 +130,10 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> EditGame(EditGameViewModel model, IFormFile uploadedFile)
         {
+            //что-то тут не так
             if (uploadedFile != null)
             {
                 string path = "/img/" + uploadedFile.FileName;
@@ -134,13 +143,17 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
                 }
                 model.Img = path;
             }
+
             Game game = await _context.Games.FindAsync(model.GameId);
             if (game != null)
             {
+                if (uploadedFile != null)
+                {
+                    game.Img = model.Img;
+                }
                 game.GameId = model.GameId;
                 game.GameName = model.GameName;
                 game.DeveloperId = model.DeveloperId;
-                game.Img = model.Img;
                 game.ReleaseDate = model.ReleaseDate;
                 game.Reviews = model.Reviews;
                 game.Genre = model.Genre;
@@ -155,6 +168,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public async Task<ActionResult> DeleteUser(string id)
         {
             User user = await _userManager.FindByIdAsync(id);
@@ -168,6 +182,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         //Games
         // POST: Games/Create      
         // GET: Games/Create
+        [Authorize(Roles = "admin")]
         public IActionResult CreateGame()
         {
 
@@ -177,6 +192,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> CreateGame([Bind("GameId,GameName,DeveloperId,ReleaseDate,Reviews,Genre,Summary,Price")] Game game, IFormFile uploadedFile)
         {
             if (ModelState.IsValid)
@@ -199,6 +215,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         }
 
         // GET: Developers/Create
+        [Authorize(Roles = "admin")]
         public IActionResult CreateDeveloper()
         {
             return View();
@@ -209,6 +226,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> CreateDeveloper([Bind("DeveloperId,DeveloperName,DeveloperSummary")] Developer developer)
         {
             if (ModelState.IsValid)
@@ -221,6 +239,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         }
 
         // GET: Developers/Delete/5
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> DeleteDeveloper(int? id)
         {
             if (id == null || _context.Developers == null)
@@ -241,6 +260,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         // POST: Developers/Delete/5
         [HttpPost, ActionName("DeleteDeveloper")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> DeleteDeveloperfirmed(int id)
         {
             if (_context.Developers == null)
@@ -257,6 +277,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
             return RedirectToAction("Index", "Developer");
         }
         // GET: Developers/Edit/5
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> EditDeveloper(int? id)
         {
             if (id == null || _context.Developers == null)
@@ -277,6 +298,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> EditDeveloper(int id, [Bind("DeveloperId,DeveloperName,DeveloperSummary")] Developer developer)
         {
             if (id != developer.DeveloperId)

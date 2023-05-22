@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using Diplom_Game.Steam_Aksana.Patrubeika.Data;
 using Diplom_Game.Steam_Aksana.Patrubeika.Models;
 using Microsoft.AspNetCore.Identity;
+using System.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
 {
@@ -44,9 +46,10 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
             }
 
             return View(game);
-        } 
+        }
 
         // GET: Games/Delete/5
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Games == null)
@@ -68,6 +71,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         // POST: Games/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Games == null)

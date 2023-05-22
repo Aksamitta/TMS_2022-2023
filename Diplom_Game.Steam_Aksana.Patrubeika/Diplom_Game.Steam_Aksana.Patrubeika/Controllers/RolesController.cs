@@ -1,7 +1,9 @@
 ﻿using Diplom_Game.Steam_Aksana.Patrubeika.Models;
 using Diplom_Game.Steam_Aksana.Patrubeika.ViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 
 namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
 {
@@ -14,11 +16,15 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
             _roleManager = roleManager;
             _userManager = userManager;
         }
+
+        [Authorize(Roles = "admin")]
         public IActionResult Index() => View(_roleManager.Roles.ToList());
 
+        [Authorize(Roles = "admin")]
         public IActionResult Create() => View();
 
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Create(string name)
         {
             if (!string.IsNullOrEmpty(name))
@@ -40,6 +46,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Delete(string id)
         {
             IdentityRole role = await _roleManager.FindByIdAsync(id);
@@ -50,8 +57,10 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize(Roles = "admin")]
         public IActionResult UserList() => View(_userManager.Users.ToList());
 
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Edit(string userId)
         {
             // get the user
@@ -74,6 +83,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Edit(string userId, List<string> roles)
         {
             // get user

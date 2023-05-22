@@ -66,37 +66,37 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         [HttpPost]
         public async Task<IActionResult> EditProfile(EditUserProfileAccountViewModel model, IFormFile file)
         {
-            if (ModelState.IsValid)
+            if (file != null)
+            {
+                string path = "/user/" + file.FileName;
+                using (var fileStream = new FileStream(_hostingEnvironment.WebRootPath + path, FileMode.Create))
+                {
+                    await file.CopyToAsync(fileStream);
+                }
+                model.Img = path;
+            }
+            User user = await _userManager.FindByIdAsync(model.Id);
+            if (user != null)
             {
                 if (file != null)
                 {
-                    string path = "/user/" + file.FileName;
-                    using (var fileStream = new FileStream(_hostingEnvironment.WebRootPath + path, FileMode.Create))
-                    {
-                        await file.CopyToAsync(fileStream);
-                    }
-                    model.Img = path;
+                    user.Img = model.Img;
                 }
-                User user = await _userManager.FindByIdAsync(model.Id);
-                if (user != null)
+                user.Id = model.Id;
+                user.SteamName = model.SteamName;
+                user.Country = model.Country;                
+                user.Age = model.Age;
+                ViewData["LevelName"] = new SelectList(_context.UserLevels, "UserLevelId", "LevelName", user.UserLevelId);
+                var result = await _userManager.UpdateAsync(user);
+                if (result.Succeeded)
                 {
-                    user.Id= model.Id;
-                    user.SteamName= model.SteamName;
-                    user.Country = model.Country;
-                    user.Img= model.Img;
-                    user.Age = model.Age;
-                    ViewData["LevelName"] = new SelectList(_context.UserLevels, "UserLevelId", "LevelName", user.UserLevelId);
-                    var result = await _userManager.UpdateAsync(user);
-                    if (result.Succeeded)
+                    return RedirectToAction("ViewProfile");
+                }
+                else
+                {
+                    foreach (var error in result.Errors)
                     {
-                        return RedirectToAction("ViewProfile");
-                    }
-                    else
-                    {
-                        foreach (var error in result.Errors)
-                        {
-                            ModelState.AddModelError(string.Empty, error.Description);
-                        }
+                        ModelState.AddModelError(string.Empty, error.Description);
                     }
                 }
             }
@@ -136,111 +136,111 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
             return View();
         }
 
-        // POST: User/Create
-        // Переделать Bind
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UserLevelId,LevelName")] User user)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(user);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(user);
-        }
+        //// POST: User/Create
+        //// Переделать Bind
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> Create([Bind("UserLevelId,LevelName")] User user)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        _context.Add(user);
+        //        await _context.SaveChangesAsync();
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    return View(user);
+        //}
 
-        // GET: User/Edit/5
-        public async Task<IActionResult> Edit(Guid? id)
-        {
-            if (id == null || _context.Users == null)
-            {
-                return NotFound();
-            }
+        //// GET: User/Edit/5
+        //public async Task<IActionResult> Edit(Guid? id)
+        //{
+        //    if (id == null || _context.Users == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            var user = await _context.Users.FindAsync(id);
-            if (user == null)
-            {
-                return NotFound();
-            }
-            return View(user);
-        }
+        //    var user = await _context.Users.FindAsync(id);
+        //    if (user == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return View(user);
+        //}
 
-        // POST: User/Edit/5
-        // need to remake
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("UserLevelId,LevelName")] UserLevel userLevel)
-        {
-            if (id != userLevel.UserLevelId)
-            {
-                return NotFound();
-            }
+        //// POST: User/Edit/5
+        //// need to remake
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> Edit(int id, [Bind("UserLevelId,LevelName")] UserLevel userLevel)
+        //{
+        //    if (id != userLevel.UserLevelId)
+        //    {
+        //        return NotFound();
+        //    }
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(userLevel);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!UserLevelExists(userLevel.UserLevelId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(userLevel);
-        }
+        //    if (ModelState.IsValid)
+        //    {
+        //        try
+        //        {
+        //            _context.Update(userLevel);
+        //            await _context.SaveChangesAsync();
+        //        }
+        //        catch (DbUpdateConcurrencyException)
+        //        {
+        //            if (!UserLevelExists(userLevel.UserLevelId))
+        //            {
+        //                return NotFound();
+        //            }
+        //            else
+        //            {
+        //                throw;
+        //            }
+        //        }
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    return View(userLevel);
+        //}
 
-        // GET: User/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null || _context.UserLevels == null)
-            {
-                return NotFound();
-            }
+        //// GET: User/Delete/5
+        //public async Task<IActionResult> Delete(int? id)
+        //{
+        //    if (id == null || _context.UserLevels == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            var userLevel = await _context.UserLevels
-                .FirstOrDefaultAsync(m => m.UserLevelId == id);
-            if (userLevel == null)
-            {
-                return NotFound();
-            }
+        //    var userLevel = await _context.UserLevels
+        //        .FirstOrDefaultAsync(m => m.UserLevelId == id);
+        //    if (userLevel == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return View(userLevel);
-        }
+        //    return View(userLevel);
+        //}
 
-        // POST: User/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            if (_context.UserLevels == null)
-            {
-                return Problem("Entity set 'ApplicationDbContext.UserLevels'  is null.");
-            }
-            var userLevel = await _context.UserLevels.FindAsync(id);
-            if (userLevel != null)
-            {
-                _context.UserLevels.Remove(userLevel);
-            }
+        //// POST: User/Delete/5
+        //[HttpPost, ActionName("Delete")]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> DeleteConfirmed(int id)
+        //{
+        //    if (_context.UserLevels == null)
+        //    {
+        //        return Problem("Entity set 'ApplicationDbContext.UserLevels'  is null.");
+        //    }
+        //    var userLevel = await _context.UserLevels.FindAsync(id);
+        //    if (userLevel != null)
+        //    {
+        //        _context.UserLevels.Remove(userLevel);
+        //    }
             
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
+        //    await _context.SaveChangesAsync();
+        //    return RedirectToAction(nameof(Index));
+        //}
 
-        private bool UserLevelExists(int id)
-        {
-          return (_context.UserLevels?.Any(e => e.UserLevelId == id)).GetValueOrDefault();
-        }
+        //private bool UserLevelExists(int id)
+        //{
+        //  return (_context.UserLevels?.Any(e => e.UserLevelId == id)).GetValueOrDefault();
+        //}
     }
 }
