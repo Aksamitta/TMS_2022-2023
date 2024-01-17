@@ -276,6 +276,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction("Index", "Developer");
         }
+
         // GET: Developers/Edit/5
         [Authorize(Roles = "admin")]
         public async Task<IActionResult> EditDeveloper(int? id)
@@ -284,7 +285,6 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
             {
                 return NotFound();
             }
-
             var developer = await _context.Developers.FindAsync(id);
             if (developer == null)
             {
@@ -294,8 +294,6 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         }
 
         // POST: Developers/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "admin")]
@@ -305,7 +303,6 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
             {
                 return NotFound();
             }
-
             if (ModelState.IsValid)
             {
                 try
@@ -328,6 +325,7 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
             }
             return View(developer);
         }
+
 
         private bool DeveloperExists(int id)
         {

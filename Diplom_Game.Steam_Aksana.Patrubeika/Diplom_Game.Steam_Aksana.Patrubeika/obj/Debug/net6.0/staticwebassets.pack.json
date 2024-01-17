@@ -285,6 +285,14 @@
       "PackagePath": "staticwebassets\\user\\1628631981_113-p-smeshnie-foto-koshek-124.jpg"
     },
     {
+      "Id": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\user\\1646693411_18-krot-info-p-smeshnoi-rizhii-kot-smeshnie-foto-19.jpg",
+      "PackagePath": "staticwebassets\\user\\1646693411_18-krot-info-p-smeshnoi-rizhii-kot-smeshnie-foto-19.jpg"
+    },
+    {
+      "Id": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\user\\5291187559-1462008619-1620502-10153872721495397-130890742-n.jpg",
+      "PackagePath": "staticwebassets\\user\\5291187559-1462008619-1620502-10153872721495397-130890742-n.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Diplom_Game.Steam_Aksana.Patrubeika.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

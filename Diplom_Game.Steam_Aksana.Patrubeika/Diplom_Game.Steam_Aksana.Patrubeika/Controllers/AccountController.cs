@@ -1,7 +1,9 @@
-﻿using Diplom_Game.Steam_Aksana.Patrubeika.Models;
+﻿using Diplom_Game.Steam_Aksana.Patrubeika.Data;
+using Diplom_Game.Steam_Aksana.Patrubeika.Models;
 using Diplom_Game.Steam_Aksana.Patrubeika.ViewModel;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Net;
 
 namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
@@ -10,12 +12,15 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
     {
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
+        private readonly ApplicationDbContext _context;
 
-        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager)
+        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager, ApplicationDbContext context)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _context = context;
         }
+
         [HttpGet]
         public IActionResult Register()
         {
@@ -25,16 +30,23 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
-            {
-                User user = new User { 
-                    Email = model.Email, 
-                    UserName = model.Email, 
-                    Country = model.Country, 
-                    SteamName = model.SteamName};
+            { 
+                
+                User user = new User
+                {
+                    Email = model.Email,
+                    UserName = model.Email,
+                    Country = model.Country,
+                    SteamName = model.SteamName,
+                    UserLevelId = 4
+                };
+                
                 // add user
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
+                    //set role "user"
+                    await _userManager.AddToRoleAsync(user, "user");
                     // coocies
                     await _signInManager.SignInAsync(user, false);
                     return RedirectToAction("Index", "Home");

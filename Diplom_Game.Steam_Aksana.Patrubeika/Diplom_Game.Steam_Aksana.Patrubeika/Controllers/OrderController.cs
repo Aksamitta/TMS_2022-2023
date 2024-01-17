@@ -35,19 +35,17 @@ namespace Diplom_Game.Steam_Aksana.Patrubeika.Controllers
 				ModelState.AddModelError("", "Your cart is empty!");
 			}
 
-			//не работает нормально
+			////не работает нормально
 			if (ModelState.IsValid)
 			{
 				_orderService.CreateOrder(order);
 				//_orderService.ProcessOrder(cartItem, order);
-                ////_steamCart.Clear();
-				return View("Completed");
+				////_steamCart.Clear();
+				return RedirectToAction("Completed");
 			}
-			else
-			{
-				return View(order);
-			}
-		}		
+            
+            return View(order);
+        }		
 
 	}
 }

@@ -14,9 +14,8 @@
     <p>
         @if (User.IsInRole("admin"))
         {
-                       <a asp-controller="Admin" asp-action="CreateDeveloper">Create New</a> 
+            <a asp-controller="Admin" asp-action="CreateDeveloper">Create New</a> 
         }
-
 </p>
 <table class="table"> 
     <tr>
@@ -34,8 +33,8 @@
                     @Html.DisplayFor(modelItem => item.DeveloperName)
                     </td>
                     <td>
-                            <a asp-action="Details" asp-route-Id="@item.DeveloperId">Detales</a>|
-                                <a asp-controller="Admin" asp-action="EditDeveloper" asp-route-Id="@item.DeveloperId">Edit</a>|
+                        <a asp-action="Details" asp-route-Id="@item.DeveloperId">Detales</a>|
+                        <a asp-controller="Admin" asp-action="EditDeveloper" asp-route-Id="@item.DeveloperId">Edit</a>|
                         <a asp-controller="Admin" asp-action="DeleteDeveloper" asp-route-Id="@item.DeveloperId">Delete</a>
                         
                     </td>

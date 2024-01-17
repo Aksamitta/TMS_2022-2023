@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6KK4GMBL+bLQJS5KxJl983mSRnzBLvwDbFXHNmvg6bE=",
+  "Hash": "BPFJG8s+SyJFBlQ4dVicv/Kp4CkZda9lNNuQKqAPMVw=",
   "Source": "Diplom_Game.Steam_Aksana.Patrubeika",
   "BasePath": "_content/Diplom_Game.Steam_Aksana.Patrubeika",
   "Mode": "Default",
@@ -2259,6 +2259,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\user\\1628631981_113-p-smeshnie-foto-koshek-124.jpg"
+    },
+    {
+      "Identity": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\user\\1646693411_18-krot-info-p-smeshnoi-rizhii-kot-smeshnie-foto-19.jpg",
+      "SourceId": "Diplom_Game.Steam_Aksana.Patrubeika",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\",
+      "BasePath": "_content/Diplom_Game.Steam_Aksana.Patrubeika",
+      "RelativePath": "user/1646693411_18-krot-info-p-smeshnoi-rizhii-kot-smeshnie-foto-19.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user\\1646693411_18-krot-info-p-smeshnoi-rizhii-kot-smeshnie-foto-19.jpg"
+    },
+    {
+      "Identity": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\user\\5291187559-1462008619-1620502-10153872721495397-130890742-n.jpg",
+      "SourceId": "Diplom_Game.Steam_Aksana.Patrubeika",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\LABS\\TMS_2022-2023\\Diplom_Game.Steam_Aksana.Patrubeika\\Diplom_Game.Steam_Aksana.Patrubeika\\wwwroot\\",
+      "BasePath": "_content/Diplom_Game.Steam_Aksana.Patrubeika",
+      "RelativePath": "user/5291187559-1462008619-1620502-10153872721495397-130890742-n.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user\\5291187559-1462008619-1620502-10153872721495397-130890742-n.jpg"
     }
   ]
 }
